@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Costum CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>Polixe</title>
+
+  </head>
+
+  	<body>
+  		
+      <!-- wrapper -->
+      <div id="wrapper" class="toggled">
+
+        <!-- Sidebar-wrapper -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  <a href="Index.html">
+                    <img src="assets/Polixe-logo-white.png">
+                  </a>
+                </li>
+                <li class="active"> <a href="Dashboard.html">Dashboard</a> </li>
+                <li> <a href="Transaction.html">Transaction</a> </li>
+                <li> <a href="Airtime.html">Convert Airtime</a> </li>
+                <li> <a href="Giftcard.html">Gift Cards</a> </li>
+                <li> <a href="Bitcoin.html">Bitcoin</a> </li>
+                <li> <a href="Settings.html">Settings</a> </li>
+                <li> <a href="#">Logout</a> </li>
+            </ul>
+        </div>
+
+        <!--navigation-->
+      	<nav class="navbar app_nav navbar-expand navbar-light">
+      		<a href="#menu-toggle" id="menu-toggle" class="navbar-brand">
+      			<ion-icon name="menu"></ion-icon>
+      		</a>
+      		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+      			<ion-icon name="menu"></ion-icon>
+      		</button>
+    		</nav>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+      		<!--overlay-->
+          <div id="overlay"></div>
+
+        	<!--page-content-wrapper -->
+          <div class="container-fluid dashboard">
+            <h3 class="dashboard_heading">
+            	Dashboard Overview
+            </h3>
+            <div class="row">
+            	<div class="col-lg-9">
+            		<div class="row">
+            			<div class="col-lg-4">
+            				<div class="card text-white bg-success activities">
+                      <div class="card-body">
+                        <h6 class="card-title">Completed Transactions</h6>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <p class="card-text">23</p>
+                          </div>
+                          <div class="col-lg-6 text-right card_icon">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            			</div>
+            			<div class="col-lg-4">
+                    <div class="card text-white bg-warning activities">
+                      <div class="card-body">
+                        <h6 class="card-title">Pending Transactions</h6>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <p class="card-text">23</p>
+                          </div>
+                          <div class="col-lg-6 text-right card_icon">
+                            <ion-icon name="time"></ion-icon>
+                          </div>
+                        </div>
+                      </div>
+                    </div>   
+                  </div>
+            			<div class="col-lg-4">
+                    <div class="card text-white bg-danger activities">
+                      <div class="card-body">
+                        <h6 class="card-title">Failed Transactions</h6>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <p class="card-text">23</p>
+                          </div>
+                          <div class="col-lg-6 text-right card_icon">
+                            <ion-icon name="close-circle"></ion-icon>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            		</div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="card promotions">
+                      <img class="promotions_img" src="assets/promotions3.jpg">
+                    </div> 
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card airtime_preview">
+                      <div class="card-body text-center">
+                        <img src="assets/network.png">
+                        <p class="card-text">Convert Airtime</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card preview">
+                      <div class="card-body">
+                        <img src="assets/bitcoin.png">
+                        <div class="text-right">
+                          <p class="card-text">Bitcoin</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card preview">
+                      <div class="card-body">
+                        <img src="assets/giftcard.png">
+                        <div class="text-right">
+                          <p class="card-text">Gift cards</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            	</div>
+            	<div class="col-lg-3">
+                <div class="card text-white card_wallet">
+                  <div class="card-body">
+                    <h4 class="card-figure">&#8358; 0.00</h4>
+                    <div class="text-right">
+                      <span class="wallet_text">Wallet Balance</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card_profile">
+                  <div class="card-body">
+                    <img class="profile_img" src="assets/profile.png">
+                    <p class="profile_text">Hi Davidson, welcome to polixe the standard took It has survived not only five centuries.</p>
+                  </div>
+                </div>
+                <!--
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-figure">$ 0.00</h4>
+                    <div class="text-right">
+                      <span class="card-text">Bitcoin Balance</span>
+                    </div>
+                  </div>
+                </div>
+                -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card card_transaction">
+                  <div class="card-header">Transactions</div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-borderless">
+                        <thead>
+                          <tr class="bg-light">
+                            <th scope="col">#</th>
+                            <th scope="col">Services</th>
+                            <th scope="col">Transaction ID</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Date</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Bitcoin</td>
+                            <td>#00546388</td>
+                            <td>Completed</td>
+                            <td>10:30am</td>
+                            <td>16-07-20</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Gift card</td>
+                            <td>#00546388</td>
+                            <td>Completed</td>
+                            <td>10:30am</td>
+                            <td>16-07-20</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Airtime conversion</td>
+                            <td>#00546388</td>
+                            <td>Completed</td>
+                            <td>10:30am</td>
+                            <td>16-07-20</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  	
+
+  
+  	
+
+	    <!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <!-- ionicons -->
+      <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+	    <script>
+          $(function(){
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+
+            $(window).resize(function(e) {
+              if($(window).width()<=768){
+                $("#wrapper").removeClass("toggled");
+              }else{
+                $("#wrapper").addClass("toggled");
+              }
+            });
+          });
+           
+        </script>
+
+	</body>
+</html>

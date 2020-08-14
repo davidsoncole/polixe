@@ -1,0 +1,815 @@
+@import url("https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400&family=Lexend+Deca&display=swap");
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #F1F7FF;
+  text-align: left;
+  overflow-x: hidden;
+}
+
+#wrapper {
+  padding-left: 0;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 25rem;
+}
+
+.navbar-toggler-icon {
+  color: #000 !important;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 25rem;
+  width: 0;
+  height: 100%;
+  margin-left: -25rem;
+  overflow-y: auto;
+  background: #0C57C9;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 25rem;
+}
+
+.navbar {
+  z-index: 10;
+}
+
+#wrapper.toggled #overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 1.5rem;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: 0px;
+}
+
+/* Sidebar Styles */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 2rem;
+  line-height: 4rem;
+}
+
+.sidebar-nav .active {
+  text-indent: 2rem;
+  line-height: 4rem;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a {
+  display: block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #999;
+}
+
+.sidebar-nav .active a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 10rem;
+  line-height: 6rem;
+}
+
+.sidebar-brand img {
+  width: 8rem;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+@media (min-width: 768px) {
+  #wrapper {
+    padding-right: 0;
+  }
+
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+
+  #sidebar-wrapper {
+    width: 0;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+
+  #wrapper.toggled #overlay {
+    background-color: transparent;
+    width: 0px;
+    height: 0px;
+  }
+
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-left: 0;
+  }
+}
+.web_nav .navbar-collapse {
+  padding-top: 2rem;
+}
+.web_nav .navbar-brand img {
+  width: 8rem;
+}
+.web_nav .navbar-nav li {
+  margin-right: 2rem;
+}
+.web_nav .navbar-nav li a {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.web_nav .navbar-nav li .nav_btn {
+  background-color: #0C57C9;
+  color: #fff;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.app_nav #menu-toggle {
+  color: #0C57C9;
+  font-size: 2.5rem;
+}
+.app_nav .navbar-toggler {
+  color: #0C57C9;
+  font-size: 1.6rem;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn_opacity {
+  background-color: rgba(39, 38, 38, 0.4);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.solid_btn {
+  background-color: #0C57C9;
+  color: #fff;
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.auth_btn {
+  background-color: #0C57C9;
+  color: #fff;
+  padding: 0.5rem 4rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.body_btn {
+  color: #0C57C9;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+}
+
+.outline_btn-light {
+  border: solid 1px #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.outline_btn {
+  border: solid 1px #0C57C9;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  color: #0C57C9;
+  margin-left: 2rem;
+}
+
+.forms .form-group {
+  margin-top: 3rem;
+}
+.forms .form-group .form-control {
+  font-size: 1.3rem;
+}
+.forms .form-group .input_text {
+  font-size: 1rem;
+  color: #0C57C9;
+}
+
+.card {
+  border: 0;
+  border-radius: 0;
+}
+
+.dashboard {
+  margin: 2rem 0;
+}
+.dashboard .dashboard_heading {
+  margin-bottom: 2rem;
+}
+.dashboard .activities .card-title {
+  font-size: 1.3rem;
+}
+.dashboard .activities .card-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.dashboard .activities .card_icon {
+  margin-top: 1rem;
+}
+.dashboard .activities .card_icon ion-icon {
+  font-size: 2rem;
+}
+.dashboard .card_wallet {
+  background-color: #0C57C9;
+}
+.dashboard .card_wallet .card-figure {
+  font-size: 3rem;
+}
+.dashboard .card_wallet .wallet_text {
+  font-size: 1.3rem;
+}
+.dashboard .card_profile {
+  margin: 2rem 0;
+}
+.dashboard .card_profile .profile_img {
+  width: 6rem;
+  margin-bottom: 2rem;
+}
+.dashboard .card_profile .profile_text {
+  font-size: 1.3rem;
+}
+.dashboard .promotions {
+  margin-top: 2rem;
+}
+.dashboard .promotions .promotions_img {
+  width: 100%;
+}
+.dashboard .airtime_preview {
+  margin: 2rem 0;
+}
+.dashboard .airtime_preview .card-body img {
+  margin-top: 2rem;
+  width: 60%;
+}
+.dashboard .airtime_preview .card-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 4rem;
+}
+.dashboard .preview {
+  margin: 2rem 0;
+}
+.dashboard .preview .card-body img {
+  margin-top: 1rem;
+  width: 25%;
+}
+.dashboard .preview .card-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.dashboard .card_transaction .card-header {
+  background-color: #fff;
+  font-size: 1.6rem;
+  border-bottom: 0;
+}
+.dashboard .card_transaction th {
+  font-size: 1.3rem;
+}
+.dashboard .card_transaction td {
+  font-size: 1.3rem;
+}
+
+.transaction {
+  margin: 2rem 0;
+}
+.transaction .transaction_heading {
+  margin-bottom: 2rem;
+}
+.transaction .card_balance {
+  background-color: #0C57C9;
+  color: #fff;
+}
+.transaction .card_balance .card-title {
+  font-size: 3rem;
+}
+.transaction .card_balance .balance_text {
+  font-size: 1.3rem;
+}
+.transaction .card_transaction {
+  margin-top: 2rem;
+}
+.transaction .card_transaction .card-header {
+  background-color: #fff;
+  font-size: 1.6rem;
+  border-bottom: 0;
+}
+.transaction .card_transaction th {
+  font-size: 1.3rem;
+}
+.transaction .card_transaction td {
+  font-size: 1.3rem;
+}
+
+.airtime {
+  margin: 2rem 0;
+}
+.airtime .airtime_heading {
+  margin-bottom: 2rem;
+}
+.airtime .card_form {
+  padding: 2rem;
+}
+.airtime .card_form .card-header {
+  background-color: #fff;
+  font-size: 1.6rem;
+  border-bottom: 0;
+}
+.airtime .notice .notice_topic {
+  color: #0C57C9;
+  font-size: 1.3rem;
+}
+.airtime .notice .notice_subtopic {
+  color: #0C57C9;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.airtime .card_instruction {
+  padding: 2rem;
+}
+.airtime .card_instruction .card-header {
+  background-color: #fff;
+  font-size: 1.6rem;
+  border-bottom: 0;
+}
+.airtime .card_instruction .card-body {
+  font-size: 1.3rem;
+}
+
+.giftcard {
+  margin: 2rem 0;
+}
+.giftcard .giftcard_heading {
+  margin-bottom: 2rem;
+}
+.giftcard .card_form {
+  padding: 2rem;
+}
+.giftcard .card_form .card-header {
+  background-color: #fff;
+  font-size: 1.6rem;
+  border-bottom: 0;
+}
+.giftcard .notice .notice_topic {
+  color: #0C57C9;
+  font-size: 1.3rem;
+}
+.giftcard .notice .notice_subtopic {
+  color: #0C57C9;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.giftcard .card_instruction {
+  padding: 2rem;
+}
+.giftcard .card_instruction .card-header {
+  background-color: #fff;
+  font-size: 1.6rem;
+  border-bottom: 0;
+}
+.giftcard .card_instruction .card-body {
+  font-size: 1.3rem;
+}
+
+.nav_bread {
+  margin-bottom: 2rem;
+}
+.nav_bread .breadcrumb {
+  font-size: 1.3rem;
+  background-color: #fff;
+}
+
+.bitcoin .bitcoin_heading {
+  margin-bottom: 2rem;
+}
+.bitcoin .bitcoin_balance {
+  background-color: #0C57C9;
+  padding: 2rem;
+}
+.bitcoin .bitcoin_balance .card-header {
+  color: #fff;
+  font-size: 1.3rem;
+  border-bottom: 0;
+}
+.bitcoin .bitcoin_balance .card-title {
+  color: #fff;
+  font-size: 3rem;
+}
+.bitcoin .bitcoin_balance .rates {
+  color: #F8BC23;
+  font-size: 1.3rem;
+}
+.bitcoin .card_bitcoin {
+  margin: 2rem 0;
+  padding: 2rem;
+}
+.bitcoin .card_bitcoin .bit_img {
+  width: 100%;
+}
+.bitcoin .card_bitcoin .bit_title {
+  font-size: 1.3rem;
+}
+.bitcoin .card_bitcoin .rates {
+  font-size: 1.3rem;
+  color: #1DDC0D;
+}
+.bitcoin .card_bitcoin .bit_button {
+  margin-top: 4rem;
+}
+.bitcoin .card_instruction {
+  padding: 2rem;
+}
+.bitcoin .card_instruction .card-header {
+  background-color: #fff;
+  font-size: 1.6rem;
+  border-bottom: 0;
+}
+.bitcoin .card_instruction .card-body {
+  font-size: 1.3rem;
+}
+.bitcoin .card_instruction .ol {
+  margin-top: 4rem !important;
+}
+.bitcoin .card_instruction .carousel-inner .carousel_title {
+  color: #0C57C9;
+}
+
+.modal .modal-content {
+  padding: 2rem;
+}
+.modal .modal-content .modal-header {
+  border: 0;
+}
+.modal .modal-content .modal-header .modal-title {
+  font-size: 1.6rem;
+}
+.modal .modal-content .modal_caption {
+  font-size: 1.3rem;
+}
+.modal .modal-content .modal_barcode {
+  width: 30rem;
+}
+.modal .modal-content .form-label {
+  color: #0C57C9;
+}
+.modal .modal-content .form-control-plaintext {
+  font-size: 1.3rem;
+  padding: 1rem;
+  border: solid 1px #0C57C9;
+}
+.modal .modal-content .modal-footer {
+  border: 0;
+}
+
+.sendcoin .sendcoin_heading {
+  margin-bottom: 2rem;
+}
+.sendcoin .card_sendicon {
+  padding: 2rem;
+}
+.sendcoin .card_sendicon .sendcoin_topic {
+  margin-bottom: 2rem;
+}
+.sendcoin .card_sendicon .sendcoin_topic .bit_img {
+  width: 100%;
+}
+.sendcoin .card_sendicon .sendcoin_topic .sendcoin_title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.sendcoin .card_sendicon .ionicon {
+  font-size: 2rem;
+}
+.sendcoin .card_instruction {
+  padding: 2rem;
+}
+.sendcoin .card_instruction .card-header {
+  background-color: #fff;
+  font-size: 1.6rem;
+  border-bottom: 0;
+}
+.sendcoin .card_instruction .card-body {
+  font-size: 1.3rem;
+}
+.sendcoin .card_instruction .ol {
+  margin-top: 4rem !important;
+}
+.sendcoin .card_instruction .carousel-inner .carousel_title {
+  color: #0C57C9;
+}
+
+.sellcoin {
+  font-size: 1.3rem;
+}
+.sellcoin .card_sellbitcion {
+  padding: 2rem;
+}
+.sellcoin .card_sellbitcion .sellcoin_heading {
+  margin-bottom: 2rem;
+}
+.sellcoin .card_sellbitcion .sell_bitcoin .sellbitcoin_form input {
+  font-size: 1.3rem;
+}
+.sellcoin .card_sellbitcion .sell_bitcoin .sellbitcoin_form .ionicon {
+  font-size: 2rem;
+}
+.sellcoin .card_sellbitcion .rates {
+  color: #0C57C9;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.sellcoin .card_sellbitcion .carousel-inner .carousel_title {
+  color: #0C57C9;
+}
+.sellcoin .card_sellbitcion .form-label {
+  color: #0C57C9;
+}
+.sellcoin .card_sellbitcion .form-control-plaintext {
+  font-size: 1.3rem;
+  padding: 1rem;
+  border: solid 1px #0C57C9;
+}
+
+.settings .settings_heading {
+  margin-bottom: 2rem;
+}
+.settings .card_profile {
+  background-color: #0C57C9;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+.settings .card_profile .profile_bold {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.settings .card_profile .space {
+  margin-bottom: 2rem;
+}
+.settings .card_bank {
+  padding: 2rem;
+}
+.settings .card_bank .card-header {
+  background-color: #fff;
+  font-size: 1.6rem;
+  border-bottom: 0;
+}
+
+.form_container {
+  padding: 0 5vw;
+}
+.form_container .navbar-brand img {
+  width: 8rem;
+}
+.form_container .form_title {
+  font-size: 4rem;
+  margin-top: 20vh;
+  color: #0C57C9;
+}
+.form_container .form_subtitle {
+  font-size: 1.6rem;
+}
+.form_container .form_note {
+  font-size: 1.3rem;
+  margin-top: 10vh;
+}
+.form_container .forget {
+  font-size: 1.3rem;
+}
+
+.login_img {
+  background-image: url("../assets/login-bg.jpg");
+  height: 100vh;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.signup_img {
+  background-image: url("../assets/login-bg.jpg");
+  height: 100vh;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  height: 100vh;
+  background-image: url(../assets/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header .header_topic {
+  padding-top: 20vh;
+}
+header .header_topic .header_title {
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-family: "Lexend Deca", sans-serif;
+}
+header .header_topic .header_subtitle {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  font-family: "Biryani", sans-serif;
+}
+header .header_canvas {
+  padding-top: 18vh;
+}
+header .header_canvas .header_img {
+  width: 80%;
+}
+
+#intro {
+  padding: 10vh 0;
+}
+#intro .intro_line {
+  background-color: #0C57C9;
+  margin: 2rem 0;
+  height: 0.4rem;
+  width: 10rem;
+}
+#intro .intro_text {
+  color: #0C57C9;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Lexend Deca", sans-serif;
+}
+#intro .intro_icon {
+  width: 12vh;
+  margin: 5vh 0 2vh 0;
+}
+#intro .intro_icon-text {
+  color: #0C57C9;
+  font-size: 1.6rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+#about {
+  background-image: url(../assets/Ellipse-1.png);
+  background-size: 20vw;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 15vh 0;
+}
+#about .about_title {
+  color: #0C57C9;
+  font-size: 4rem;
+  margin-top: 4rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+#about .about_img {
+  width: 80%;
+}
+#about .about_text {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+#giftcard {
+  padding: 15vh 0;
+}
+#giftcard .giftcard_title {
+  color: #0C57C9;
+  font-size: 4rem;
+  margin-top: 4rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+#giftcard .giftcard_text {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+#giftcard .giftcard_img {
+  width: 80%;
+}
+
+#airtime {
+  background-image: url(../assets/box.png);
+  background-size: 15vw;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding: 15vh 0;
+}
+#airtime .airtime_title {
+  color: #0C57C9;
+  font-size: 4rem;
+  margin-top: 4rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+#airtime .airtime_img {
+  width: 80%;
+}
+#airtime .airtime_text {
+  font-size: 1.6rem;
+}
+
+#bitcoin {
+  padding: 15vh 0;
+}
+#bitcoin .bitcoin_title {
+  color: #0C57C9;
+  font-size: 4rem;
+  margin-top: 4rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+#bitcoin .bitcoin_text {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+#bitcoin .bitcoin_img {
+  width: 80%;
+}
+
+#conclude {
+  background-color: #D8EEFB;
+  padding: 15vh 0;
+}
+#conclude .conclude_title {
+  color: #0C57C9;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+#conclude .conclude_subtitle {
+  font-size: 1.6rem;
+}
+
+footer {
+  padding: 10vh 0 2vh 0;
+}
+footer .footer_text {
+  font-size: 1.3rem;
+}

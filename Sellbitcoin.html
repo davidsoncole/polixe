@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Costum CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>Polixe</title>
+
+
+  </head>
+
+  	<body>
+
+  		
+        <!-- wrapper -->
+        <div id="wrapper" class="toggled">
+
+            <!-- Sidebar-wrapper -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="Index.html">
+                            <img src="assets/Polixe-logo-white.png">
+                        </a>
+                    </li>
+                    <li> <a href="Dashboard.html">Dashboard</a> </li>
+	                <li> <a href="Transaction.html">Transaction</a> </li>
+	                <li> <a href="Airtime.html">Convert Airtime</a> </li>
+	                <li> <a href="Giftcard.html">Gift Cards</a> </li>
+	                <li class="active"> <a href="Bitcoin.html">Bitcoin</a> </li>
+	                <li> <a href="Settings.html">Settings</a> </li>
+                    <li> <a href="#">Logout</a> </li>
+                </ul>
+            </div>
+
+            <!--navigation-->
+            	<nav class="navbar navbar-expand app_nav">
+            		<a href="#menu-toggle" id="menu-toggle" class="navbar-brand">
+            			<ion-icon name="menu"></ion-icon>
+            		</a>
+            		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+            			<ion-icon name="menu"></ion-icon>
+            		</button>
+        		</nav>
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+
+        		<!--overlay-->
+            	<div id="overlay"></div>
+
+            	<!--page-content-wrapper -->
+                <div class="container-fluid sellcoin">
+                    <h3 class="sellcoin_heading">
+                        Sell Bitcoin
+                    </h3>
+                    <nav class="nav_bread" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="Bitcoin.html">Back</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Sell bitcoin</li>
+                        </ol>
+                    </nav>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card card_sellbitcion">
+                                <div class="card-body">
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="sell-bitcoin-tab" data-toggle="pill" href="#sell-bitcoin" role="tab" aria-controls="sell-bitcoin" aria-selected="true">SELL BITCOIN</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="sell-directly-tab" data-toggle="pill" href="#sell-directly" role="tab" aria-controls="sell-directly" aria-selected="false">SELL BITCOIN DIRECTLY</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+
+                                        <!--sell bitcoin-->
+                                        <div class="tab-pane fade show active" id="sell-bitcoin" role="tabpanel" aria-labelledby="sell-bitcoin-tab">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="card sell_bitcoin">
+                                                        <div class="card-body">
+                                                            <h3 class="rates">Exchange Rate - 528.00/USD</h3>
+                                                            <span>Sell Bitcoin From</span>
+                                                            <div class="row buycoin_box-outline">
+                                                                <div class="col-6">
+                                                                    <h4>Naira Wallet</h4>
+                                                                </div>
+                                                                <div class="col-6 text-right">
+                                                                    <h4>&#8358; 0.00</h4>
+                                                                    <span>Balance</span>
+                                                                </div>
+                                                            </div>
+                                                            <span>Deposit Bitcoin To</span>
+                                                            <div class="row buycoin_box-outline">
+                                                                <div class="col-6">
+                                                                    <h4>Bitcoin Wallet</h4>
+                                                                </div>
+                                                                <div class="col-6 text-right">
+                                                                    <h4>0.00000 BTC</h4>
+                                                                    <span>Balance</span>
+                                                                </div>
+                                                            </div>
+                                                            <form class="sellbitcoin_form">
+                                                                <div class="form-group">
+                                                                    <label for="exampleFormControlInput1">Amount</label>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-5">
+                                                                            <div class="input-group">
+                                                                                <input type="text" class="form-control" placeholder="0.00000">
+                                                                                <div class="input-group-append">
+                                                                                    <span class="input-group-text">BTC</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-2 text-center ionicon">
+                                                                            <ion-icon name="swap-horizontal"></ion-icon>
+                                                                        </div>
+                                                                        <div class="col-lg-5">
+                                                                            <div class="input-group">
+                                                                                <input type="text" class="form-control" placeholder="0.00">
+                                                                                <div class="input-group-append">
+                                                                                    <span class="input-group-text">USD</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 text-center ionicon">
+                                                                            <ion-icon name="swap-vertical"></ion-icon>
+                                                                        </div>
+                                                                        <div class="col-lg-2"></div>
+                                                                        <div class="col-lg-5 text-center ionicon">
+                                                                            <ion-icon name="swap-vertical"></ion-icon>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" placeholder="0.00">
+                                                                    <div class="input-group-append">
+                                                                        <span class="input-group-text">NAIRA</span>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="btn btn-default auth_btn">CONTINUE</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--sell bitcoin directly-->
+                                        <div class="tab-pane fade" id="sell-directly" role="tabpanel" aria-labelledby="sell-directly-tab">
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h3 class="rates">Exchange Rate - 528.00/USD</h3>
+                                                            <div class="card card_instruction">
+                                                                <div class="card-body">
+                                                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                                                        
+                                                                        <div class="carousel-inner">
+                                                                            <div class="carousel-item active">
+                                                                              <h4 class="carousel_title">How to send Bitcoin?</h4>
+                                                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper vel risus non rhoncus. Sed tempor diam sed massa convallis vehicula. Fusce in facilisis erat. Integer fringilla tortor metus, id tempor velit rutrum.</p>
+                                                                            </div>
+                                                                            <div class="carousel-item">
+                                                                              <h4 class="carousel_title">How to send Bitcoin?</h4>
+                                                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper vel risus non rhoncus. Sed tempor diam sed massa convallis vehicula. Fusce in facilisis erat. Integer fringilla tortor metus, id tempor velit rutrum.</p>
+                                                                            </div>
+                                                                            <div class="carousel-item">
+                                                                              <h4 class="carousel_title">How to send Bitcoin?</h4>
+                                                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper vel risus non rhoncus. Sed tempor diam sed massa convallis vehicula. Fusce in facilisis erat. Integer fringilla tortor metus, id tempor velit rutrum.</p>
+                                                                            </div>
+                                                                            <div class="carousel-item">
+                                                                              <h4 class="carousel_title">How to send Bitcoin?</h4>
+                                                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper vel risus non rhoncus. Sed tempor diam sed massa convallis vehicula. Fusce in facilisis erat. Integer fringilla tortor metus, id tempor velit rutrum.</p>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                        <span class="sr-only">Previous</span>
+                                                                        </a>
+                                                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                        <span class="sr-only">Next</span>
+                                                                        </a>
+
+                                                                        <div>
+                                                                            <br><br>
+                                                                            <ol class="carousel-indicators">
+                                                                            <li class="bg-dark" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                                            <li class="bg-dark" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                                            <li class="bg-dark" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                                                            <li class="bg-dark" data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                                                        </ol>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="staticEmail" class="form-label">Copy Link</label>
+                                                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="consectetu464848974elittiam3564784ullamcorper:/vel=risus%-non960rhon7584">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4"></div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+  	
+
+  
+  	
+
+	    <!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- ionicons -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+	    <script>
+          $(function(){
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+
+            $(window).resize(function(e) {
+              if($(window).width()<=768){
+                $("#wrapper").removeClass("toggled");
+              }else{
+                $("#wrapper").addClass("toggled");
+              }
+            });
+          });
+           
+        </script>
+
+	</body>
+</html>
