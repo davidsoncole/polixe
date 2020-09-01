@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--Costum CSS-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
 
     <title>Polixe</title>
 
@@ -26,15 +26,25 @@
             <!-- Sidebar-wrapper -->
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
-                    <li class="sidebar-brand"> <a href="Index.html"> Polixe </a> </li>
-                    <li> <a href="Dashboard.html">Dashboard</a> </li>
-	                <li> <a href="Transaction.html">Transaction</a> </li>
-	                <li> <a href="Airtime.html">Convert Airtime</a> </li>
-	                <li> <a href="Giftcard.html">Gift Cards</a> </li>
-	                <li class="active"> <a href="Bitcoin.html">Bitcoin</a> </li>
-	                <li> <a href="Settings.html">Settings</a> </li>
-                    <li> <a href="#">Logout</a> </li>
+                    <li class="sidebar-brand">
+                      <a href="Index.html">
+                        <img src="../assets/Polixe-logo-white.png">
+                      </a>
+                    </li>
+                    <li> <a href="Dashboard.html"><ion-icon name="grid"></ion-icon> Dashboard</a> </li>
+                    <li> <a href="Transaction.html"><ion-icon name="cash"></ion-icon> Transaction</a> </li>
+                    <li> <a href="Airtime.html"><ion-icon name="sync-circle"></ion-icon> Convert Airtime</a> </li>
+                    <li> <a href="Giftcard.html"><ion-icon name="journal"></ion-icon> Gift Cards</a> </li>
+                    <li class="active"> <a href="Bitcoin.html"><ion-icon name="sync-circle"></ion-icon> Bitcoin</a> </li>
+                    <li> <a href="Settings.html"><ion-icon name="settings"></ion-icon> Settings</a> </li>
+                    <li> <a href="#"><ion-icon name="log-out"></ion-icon> Logout</a> </li>
+                    <div class="contact_sidebar">
+                      <button class="btn btn-default btn_opacity">GIVE SUGGESTION <ion-icon name="add"></ion-icon></button>
+                      <h6 class="topic">CONTACT</h6>
+                      <span class="email">support@polixe.com</span>
+                    </div>
                 </ul>
+                
             </div>
 
             <!--navigation-->
@@ -45,6 +55,10 @@
             		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
             			<span class="navbar-toggler-icon"></span>
             		</button>
+                    <div class="profile_navbar ml-auto">
+                        <span class="user_name">unogu davidson</span>
+                        <img class="user_img" src="../assets/profile.png">
+                    </div>
         		</nav>
 
             <!-- Page Content -->

@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--Costum CSS-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
 
-    <title>Polixe</title>
+    <title>Polixe-sell-bitcoin</title>
 
 
   </head>
@@ -27,18 +27,24 @@
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
-                        <a href="Index.html">
-                            <img src="assets/Polixe-logo-white.png">
-                        </a>
+                      <a href="Index.html">
+                        <img src="../assets/Polixe-logo-white.png">
+                      </a>
                     </li>
-                    <li> <a href="Dashboard.html">Dashboard</a> </li>
-	                <li> <a href="Transaction.html">Transaction</a> </li>
-	                <li> <a href="Airtime.html">Convert Airtime</a> </li>
-	                <li> <a href="Giftcard.html">Gift Cards</a> </li>
-	                <li class="active"> <a href="Bitcoin.html">Bitcoin</a> </li>
-	                <li> <a href="Settings.html">Settings</a> </li>
-                    <li> <a href="#">Logout</a> </li>
+                    <li> <a href="Dashboard.html"><ion-icon name="grid"></ion-icon> Dashboard</a> </li>
+                    <li> <a href="Transaction.html"><ion-icon name="cash"></ion-icon> Transaction</a> </li>
+                    <li> <a href="Airtime.html"><ion-icon name="sync-circle"></ion-icon> Convert Airtime</a> </li>
+                    <li> <a href="Giftcard.html"><ion-icon name="journal"></ion-icon> Gift Cards</a> </li>
+                    <li  class="active"> <a href="Bitcoin.html"><ion-icon name="sync-circle"></ion-icon> Bitcoin</a> </li>
+                    <li> <a href="Settings.html"><ion-icon name="settings"></ion-icon> Settings</a> </li>
+                    <li> <a href="#"><ion-icon name="log-out"></ion-icon> Logout</a> </li>
+                    <div class="contact_sidebar">
+                      <button class="btn btn-default btn_opacity">GIVE SUGGESTION <ion-icon name="add"></ion-icon></button>
+                      <h6 class="topic">CONTACT</h6>
+                      <span class="email">support@polixe.com</span>
+                    </div>
                 </ul>
+                
             </div>
 
             <!--navigation-->
@@ -49,6 +55,10 @@
             		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
             			<ion-icon name="menu"></ion-icon>
             		</button>
+                    <div class="profile_navbar ml-auto">
+                        <span class="user_name">unogu davidson</span>
+                        <img class="user_img" src="../assets/profile.png">
+                    </div>
         		</nav>
 
             <!-- Page Content -->
@@ -77,9 +87,9 @@
                                         <li class="nav-item" role="presentation">
                                             <a class="nav-link active" id="sell-bitcoin-tab" data-toggle="pill" href="#sell-bitcoin" role="tab" aria-controls="sell-bitcoin" aria-selected="true">SELL BITCOIN</a>
                                         </li>
-                                        <li class="nav-item" role="presentation">
+                                        <!--<li class="nav-item" role="presentation">
                                             <a class="nav-link" id="sell-directly-tab" data-toggle="pill" href="#sell-directly" role="tab" aria-controls="sell-directly" aria-selected="false">SELL BITCOIN DIRECTLY</a>
-                                        </li>
+                                        </li>-->
                                     </ul>
                                     <div class="tab-content" id="pills-tabContent">
 
@@ -157,7 +167,7 @@
                                         </div>
 
                                         <!--sell bitcoin directly-->
-                                        <div class="tab-pane fade" id="sell-directly" role="tabpanel" aria-labelledby="sell-directly-tab">
+                                        <!--<div class="tab-pane fade" id="sell-directly" role="tabpanel" aria-labelledby="sell-directly-tab">
                                             <div class="col-lg-12">
                                                 <div class="row">
                                                     <div class="card">
@@ -215,7 +225,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                 </div>
                             </div>

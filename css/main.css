@@ -72,10 +72,13 @@ body {
   padding: 0;
   list-style: none;
 }
-
 .sidebar-nav li {
   text-indent: 2rem;
   line-height: 4rem;
+}
+.sidebar-nav ion-icon {
+  margin-bottom: -0.1rem;
+  font-size: 1.5rem;
 }
 
 .sidebar-nav .active {
@@ -89,7 +92,7 @@ body {
   display: block;
   font-size: 1.6rem;
   text-decoration: none;
-  color: #999;
+  color: #9FDBFC;
 }
 
 .sidebar-nav .active a {
@@ -159,8 +162,25 @@ body {
     margin-left: 0;
   }
 }
-.web_nav .navbar-collapse {
-  padding-top: 2rem;
+.contact_sidebar {
+  margin-top: 20vh;
+  padding: 2rem;
+}
+.contact_sidebar button ion-icon {
+  margin-bottom: -0.3rem;
+  font-size: 1.5rem;
+}
+.contact_sidebar .topic {
+  color: #D8EEFB;
+  margin-top: 2rem;
+}
+.contact_sidebar .email {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.web_nav {
+  transition: 0.3s;
 }
 .web_nav .navbar-brand img {
   width: 8rem;
@@ -187,6 +207,46 @@ body {
   color: #0C57C9;
   font-size: 1.6rem;
 }
+.app_nav .profile_navbar {
+  padding: 0 2rem;
+}
+.app_nav .profile_navbar .user_name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+.app_nav .profile_navbar .user_img {
+  width: 3rem;
+}
+
+#response .navbar .navbar-brand img {
+  width: 8rem;
+}
+#response .response_content {
+  padding: 10vw;
+}
+#response .response_img {
+  width: 15rem;
+}
+#response .response_title {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+#response .response_text {
+  font-size: 1.4rem;
+  max-width: 40rem;
+  margin: auto;
+}
+
+.navbox {
+  padding: 2rem 2rem;
+}
+
+.nav_scroll {
+  background-color: #fff !important;
+  box-shadow: 0px 1px 10px #999;
+  transition: 0.5s;
+}
 
 .btn {
   border-radius: 0;
@@ -207,6 +267,25 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 2rem;
+}
+
+.solid_btn-body {
+  background-color: #0C57C9;
+  color: #fff;
+  padding: 1rem 1rem 1rem 4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  transition: 0.1rem;
+}
+.solid_btn-body:hover {
+  color: #0C57C9;
+  background-color: #fff;
+  transition: 0.1rem;
+}
+.solid_btn-body ion-icon {
+  margin-bottom: -0.3rem;
+  margin-left: 2rem;
 }
 
 .auth_btn {
@@ -236,18 +315,35 @@ body {
   padding: 0.5rem 1rem;
   font-size: 1.3rem;
   color: #0C57C9;
-  margin-left: 2rem;
 }
 
-.forms .form-group {
-  margin-top: 3rem;
+.outline_btn-body {
+  border: solid 2px #0C57C9;
+  margin-top: 2rem;
+  padding: 0.5rem 3rem;
+  font-size: 1.6rem;
+  color: #0C57C9;
+  font-weight: bold;
 }
+.outline_btn-body:hover {
+  background-color: #0C57C9;
+  color: #fff;
+}
+
 .forms .form-group .form-control {
   font-size: 1.3rem;
 }
 .forms .form-group .input_text {
   font-size: 1rem;
   color: #0C57C9;
+}
+
+.forms_auth .form-group .form-control {
+  font-size: 1.3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #D8EEFB;
 }
 
 .card {
@@ -259,6 +355,9 @@ body {
   margin: 2rem 0;
 }
 .dashboard .dashboard_heading {
+  margin-bottom: 2rem;
+}
+.dashboard .activities {
   margin-bottom: 2rem;
 }
 .dashboard .activities .card-title {
@@ -356,6 +455,7 @@ body {
 }
 .transaction .card_transaction .card-header {
   background-color: #fff;
+  font-weight: bold;
   font-size: 1.6rem;
   border-bottom: 0;
 }
@@ -373,10 +473,12 @@ body {
   margin-bottom: 2rem;
 }
 .airtime .card_form {
+  margin-bottom: 2rem;
   padding: 2rem;
 }
 .airtime .card_form .card-header {
   background-color: #fff;
+  font-weight: bold;
   font-size: 1.6rem;
   border-bottom: 0;
 }
@@ -394,6 +496,7 @@ body {
 }
 .airtime .card_instruction .card-header {
   background-color: #fff;
+  font-weight: bold;
   font-size: 1.6rem;
   border-bottom: 0;
 }
@@ -408,10 +511,12 @@ body {
   margin-bottom: 2rem;
 }
 .giftcard .card_form {
+  margin-bottom: 2rem;
   padding: 2rem;
 }
 .giftcard .card_form .card-header {
   background-color: #fff;
+  font-weight: bold;
   font-size: 1.6rem;
   border-bottom: 0;
 }
@@ -429,6 +534,7 @@ body {
 }
 .giftcard .card_instruction .card-header {
   background-color: #fff;
+  font-weight: bold;
   font-size: 1.6rem;
   border-bottom: 0;
 }
@@ -453,6 +559,7 @@ body {
 }
 .bitcoin .bitcoin_balance .card-header {
   color: #fff;
+  font-weight: bold;
   font-size: 1.3rem;
   border-bottom: 0;
 }
@@ -486,6 +593,7 @@ body {
 }
 .bitcoin .card_instruction .card-header {
   background-color: #fff;
+  font-weight: bold;
   font-size: 1.6rem;
   border-bottom: 0;
 }
@@ -550,6 +658,7 @@ body {
 }
 .sendcoin .card_instruction .card-header {
   background-color: #fff;
+  font-weight: bold;
   font-size: 1.6rem;
   border-bottom: 0;
 }
@@ -615,6 +724,7 @@ body {
 }
 .settings .card_bank .card-header {
   background-color: #fff;
+  font-weight: bold;
   font-size: 1.6rem;
   border-bottom: 0;
 }
@@ -730,6 +840,7 @@ header .header_canvas .header_img {
 #about .about_text {
   font-size: 1.6rem;
   line-height: 3rem;
+  color: #0C57C9;
 }
 
 #giftcard {
@@ -746,6 +857,7 @@ header .header_canvas .header_img {
 #giftcard .giftcard_text {
   font-size: 1.6rem;
   line-height: 3rem;
+  color: #0C57C9;
 }
 #giftcard .giftcard_img {
   width: 80%;
@@ -771,6 +883,7 @@ header .header_canvas .header_img {
 }
 #airtime .airtime_text {
   font-size: 1.6rem;
+  color: #0C57C9;
 }
 
 #bitcoin {
@@ -787,6 +900,7 @@ header .header_canvas .header_img {
 #bitcoin .bitcoin_text {
   font-size: 1.6rem;
   line-height: 3rem;
+  color: #0C57C9;
 }
 #bitcoin .bitcoin_img {
   width: 80%;
@@ -805,11 +919,50 @@ header .header_canvas .header_img {
 }
 #conclude .conclude_subtitle {
   font-size: 1.6rem;
+  color: #0C57C9;
 }
 
 footer {
   padding: 10vh 0 2vh 0;
 }
+footer ul li {
+  display: inline;
+  font-size: 1.6rem;
+}
 footer .footer_text {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+}
+footer .footer_number {
+  color: #0C57C9;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+footer .footer_number ion-icon {
+  margin-bottom: -0.2rem;
+}
+footer .footer_icon ion-icon {
+  color: #0C57C9;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.terms_bg {
+  background-color: #D8EEFB;
+}
+
+.terms {
+  color: #0C57C9;
+  background-color: #FFF;
+}
+.terms .navbar .navbar-brand img {
+  width: 8rem;
+}
+.terms .terms_content {
+  padding-top: 10vh;
+}
+.terms .terms_content .terms_title {
+  font-size: 4rem;
+}
+.terms .terms_content p {
+  font-size: 1.6rem;
 }
