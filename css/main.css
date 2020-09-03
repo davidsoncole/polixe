@@ -30,7 +30,7 @@ body {
   height: 100%;
   margin-left: -25rem;
   overflow-y: auto;
-  background: #0C57C9;
+  background: #fff;
   transition: all 0.5s ease;
 }
 
@@ -70,6 +70,7 @@ body {
   width: 25rem;
   margin: 0;
   padding: 0;
+  font-weight: bold;
   list-style: none;
 }
 .sidebar-nav li {
@@ -79,6 +80,7 @@ body {
 .sidebar-nav ion-icon {
   margin-bottom: -0.1rem;
   font-size: 1.5rem;
+  margin-right: 1rem;
 }
 
 .sidebar-nav .active {
@@ -92,19 +94,20 @@ body {
   display: block;
   font-size: 1.6rem;
   text-decoration: none;
-  color: #9FDBFC;
+  color: rgba(12, 87, 201, 0.7);
 }
 
 .sidebar-nav .active a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: #0C57C9;
+  background: #D8EEFB;
 }
 
 .sidebar-nav li a:hover {
   text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  color: #0C57C9;
+  background: #D8EEFB;
 }
 
 .sidebar-nav li a:active, .sidebar-nav li a:focus {
@@ -117,7 +120,7 @@ body {
 }
 
 .sidebar-brand img {
-  width: 8rem;
+  width: 15rem;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -171,11 +174,12 @@ body {
   font-size: 1.5rem;
 }
 .contact_sidebar .topic {
-  color: #D8EEFB;
+  color: #0C57C9;
+  font-weight: bold;
   margin-top: 2rem;
 }
 .contact_sidebar .email {
-  color: #fff;
+  color: #0C57C9;
   font-size: 1.3rem;
 }
 
@@ -183,7 +187,7 @@ body {
   transition: 0.3s;
 }
 .web_nav .navbar-brand img {
-  width: 8rem;
+  width: 15rem;
 }
 .web_nav .navbar-nav li {
   margin-right: 2rem;
@@ -220,7 +224,8 @@ body {
 }
 
 #response .navbar .navbar-brand img {
-  width: 8rem;
+  width: 15rem;
+  margin: 2rem 0;
 }
 #response .response_content {
   padding: 10vw;
@@ -258,6 +263,20 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 0.5rem 1rem;
+}
+
+.btn_sidebar {
+  color: #0C57C9;
+  border: 0.15rem solid #0C57C9;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: 0.1rem;
+}
+.btn_sidebar:hover {
+  color: #fff;
+  background-color: #0C57C9;
+  transition: 0.1rem;
 }
 
 .solid_btn {
@@ -304,16 +323,18 @@ body {
 }
 
 .outline_btn-light {
-  border: solid 1px #fff;
+  border: solid 1.5px #fff;
   padding: 0.5rem 1rem;
+  font-weight: bold;
   font-size: 1.3rem;
   color: #fff;
 }
 
 .outline_btn {
-  border: solid 1px #0C57C9;
+  border: solid 1.5px #0C57C9;
   padding: 0.5rem 1rem;
   font-size: 1.3rem;
+  font-weight: bold;
   color: #0C57C9;
 }
 
@@ -330,12 +351,24 @@ body {
   color: #fff;
 }
 
-.forms .form-group .form-control {
+.forms .form-group input {
   font-size: 1.3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #D8EEFB;
 }
 .forms .form-group .input_text {
   font-size: 1rem;
   color: #0C57C9;
+}
+.forms .uploads {
+  font-size: 1.3rem;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border: 1px solid #D8EEFB;
 }
 
 .forms_auth .form-group .form-control {
@@ -455,7 +488,6 @@ body {
 }
 .transaction .card_transaction .card-header {
   background-color: #fff;
-  font-weight: bold;
   font-size: 1.6rem;
   border-bottom: 0;
 }
@@ -492,10 +524,12 @@ body {
   font-weight: bold;
 }
 .airtime .card_instruction {
+  background-color: #0C57C9;
+  color: #fff;
   padding: 2rem;
 }
 .airtime .card_instruction .card-header {
-  background-color: #fff;
+  background-color: #0C57C9;
   font-weight: bold;
   font-size: 1.6rem;
   border-bottom: 0;
@@ -530,10 +564,12 @@ body {
   font-weight: bold;
 }
 .giftcard .card_instruction {
+  background-color: #0C57C9;
+  color: #fff;
   padding: 2rem;
 }
 .giftcard .card_instruction .card-header {
-  background-color: #fff;
+  background-color: #0C57C9;
   font-weight: bold;
   font-size: 1.6rem;
   border-bottom: 0;
@@ -733,7 +769,8 @@ body {
   padding: 0 5vw;
 }
 .form_container .navbar-brand img {
-  width: 8rem;
+  width: 15rem;
+  margin: 2rem 0;
 }
 .form_container .form_title {
   font-size: 4rem;
@@ -844,6 +881,10 @@ header .header_canvas .header_img {
 }
 
 #giftcard {
+  background-image: url(../assets/box.png);
+  background-size: 20vw;
+  background-position: left;
+  background-repeat: no-repeat;
   padding: 15vh 0;
 }
 #giftcard .giftcard_title {
@@ -864,9 +905,9 @@ header .header_canvas .header_img {
 }
 
 #airtime {
-  background-image: url(../assets/box.png);
-  background-size: 15vw;
-  background-position: right bottom;
+  background-image: url(../assets/Ellipse-1.png);
+  background-size: 20vw;
+  background-position: right;
   background-repeat: no-repeat;
   padding: 15vh 0;
 }
@@ -887,6 +928,10 @@ header .header_canvas .header_img {
 }
 
 #bitcoin {
+  background-image: url(../assets/box.png);
+  background-size: 20vw;
+  background-position: left;
+  background-repeat: no-repeat;
   padding: 15vh 0;
 }
 #bitcoin .bitcoin_title {
@@ -924,24 +969,32 @@ header .header_canvas .header_img {
 
 footer {
   padding: 10vh 0 2vh 0;
+  background-color: #0C57C9;
 }
 footer ul li {
   display: inline;
   font-size: 1.6rem;
+  color: #fff;
+}
+footer ul li a {
+  color: #D8EEFB;
 }
 footer .footer_text {
   font-size: 1.6rem;
+  color: #fff;
+  font-weight: bold;
 }
 footer .footer_number {
-  color: #0C57C9;
+  color: #D8EEFB;
   font-size: 1.6rem;
   font-weight: bold;
 }
 footer .footer_number ion-icon {
   margin-bottom: -0.2rem;
+  color: #D8EEFB;
 }
 footer .footer_icon ion-icon {
-  color: #0C57C9;
+  color: #D8EEFB;
   font-size: 2rem;
   margin-right: 2rem;
 }

@@ -4,12 +4,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#D8EEFB" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--Costum CSS-->
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
     
 
@@ -29,20 +32,20 @@
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 			    <a class="navbar-brand" href="#">
-			    	<img src="../assets/Polixe-logo-white.png">
+			    	<img src="../assets/Polixe-logo-light.png">
 			    </a>
 			    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
 			      <li class="nav-item active">
-			        <a class="nav-link page-scroll" href="#home">Home <span class="sr-only">(current)</span></a>
+			        <a data-scroll class="nav-link page-scroll" href="#home">Home <span class="sr-only">(current)</span></a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link page-scroll" href="#about">About</a>
+			        <a data-scroll class="nav-link page-scroll" href="#about">About</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link page-scroll" href="#giftcard">Services</a>
+			        <a data-scroll class="nav-link page-scroll" href="#giftcard">Services</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link btn btn-default nav_btn" href="Login.html">Login</a>
+			        <a data-scroll class="nav-link btn btn-default nav_btn" href="Login.html">Login</a>
 			      </li>
 			    </ul>
 			  </div>
@@ -175,7 +178,7 @@
 		<section id="bitcoin">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-6 bitcoin_textarea">
 						<h3 class="bitcoin_title">
 							Secure the trust - Trade Bitcoins
 						</h3>
@@ -245,34 +248,34 @@
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+	    <!-- Get a specific version -->
+		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
 	    <!-- ionicons -->
     	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
     	<script type="text/javascript">
     		$(document).ready(function() {
 
-			$(window).scroll(function() {    
-			    var scroll = $(window).scrollTop();
+				$(window).scroll(function() {    
+				    var scroll = $(window).scrollTop();
 
-			     //>=, not <=
-			    if (scroll >= 60) {
-			        //clearHeader, not clearheader - caps H
-			        $(".navbar").removeClass("navbar-dark");
-			        $(".navbar").addClass("nav_scroll");
-			        $('.navbar .navbar-brand img').attr('src','../assets/Polixe-logo.png');
-			    } else {
-			      $(".navbar").removeClass("nav_scroll");
-			      $(".navbar").addClass("navbar-dark");
-			      $('.navbar .navbar-brand img').attr('src','../assets/Polixe-logo-white.png');
-			    }
-			}); //missing );
-			  
-			  
-			  
-			  
+				     //>=, not <=
+				    if (scroll >= 60) {
+				        //clearHeader, not clearheader - caps H
+				        $(".navbar").removeClass("navbar-dark");
+				        $(".navbar").addClass("nav_scroll");
+				        $('.navbar .navbar-brand img').attr('src','../assets/Polixe-logo-dark.png');
+				    } else {
+				      $(".navbar").removeClass("nav_scroll");
+				      $(".navbar").addClass("navbar-dark");
+				      $('.navbar .navbar-brand img').attr('src','../assets/Polixe-logo-light.png');
+				    }
+				});
+			});
 
-			  
-			// document ready  
+			var scroll = new SmoothScroll('a[href*="#"]', {
+				speed: 1000,
 			});
     	</script>
 
