@@ -12,7 +12,7 @@
     <!--Costum CSS-->
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 
-    <title>Polixe</title>
+    <title>Polixe-Give Suggestions</title>
 
 
   </head>
@@ -33,13 +33,13 @@
                     </li>
                     <li> <a href="Dashboard.html"><ion-icon name="grid"></ion-icon> Dashboard</a> </li>
                     <li> <a href="Transaction.html"><ion-icon name="cash"></ion-icon> Transaction</a> </li>
-                    <li class="active"> <a href="Airtime.html"><ion-icon name="sync-circle"></ion-icon> Convert Airtime</a> </li>
+                    <li> <a href="Airtime.html"><ion-icon name="sync-circle"></ion-icon> Convert Airtime</a> </li>
                     <li> <a href="Giftcard.html"><ion-icon name="journal"></ion-icon> Gift Cards</a> </li>
                     <li> <a href="Bitcoin.html"><ion-icon name="sync-circle"></ion-icon> Bitcoin</a> </li>
                     <li> <a href="Settings.html"><ion-icon name="settings"></ion-icon> Settings</a> </li>
                     <li> <a href="#"><ion-icon name="log-out"></ion-icon> Logout</a> </li>
                     <div class="contact_sidebar">
-                      <a href="Suggestion.html" class="btn btn-default btn_sidebar">GIVE SUGGESTION <ion-icon name="add"></ion-icon></a>
+                      <button disabled class="btn btn-default btn_sidebar">GIVE SUGGESTION <ion-icon name="add"></ion-icon></button>
                       <h6 class="topic">CONTACT</h6>
                       <span class="email">support@polixe.com</span>
                     </div>
@@ -68,60 +68,39 @@
             	<div id="overlay"></div>
 
             	<!--page-content-wrapper -->
-                <div class="container-fluid airtime">
-                	<h3 class="airtime_heading">
-		              	Convert Airtime
-		            </h3>
+                <div class="container-fluid Suggestions">
+                    <h3 class="Suggestions_heading">
+                        Suggestions
+                    </h3>
+                    <nav class="nav_bread" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="Dashboard.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Suggestions</li>
+                        </ol>
+                    </nav>
 
                     <div class="row">
-                    	<div class="col-lg-8">
-                    		<div class="card card_form">
-								<div class="card-header">Convert airtime to cash</div>
-								<div class="card-body">
-									<div class="row">
-										<div class="col-lg-6">
-											<form class="forms">
-												<div class="form-group">
-												    <select class="form-control selectWrapper" id="exampleFormControlSelect1">
-												      <option disabled selected>Select Networks</option>
-												      <option>MTN Nigeria</option>
-												      <option>9Mobile</option>
-												      <option>Airtel</option>
-												      <option>GLO Nigeria</option>
-												    </select>
-												</div>
-												<div class="form-group">
-												    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Sender’s Phone Number">
-												</div>
-												<div class="form-group">
-												    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Amount">
-												</div>
-												<div class="form-group">
-												    <input class="form-control" type="text" placeholder="Network Charge" readonly>
-												</div>
-                                                <div class="notice">
-                                                    <span class="notice_subtopic">&#8358; 0.00</span>
-                                                    <p class="notice_topic">You will get</p>
-                                                </div>
-												<br>
-												<button class="btn btn-default auth_btn">CONVERT</button>
-											</form>
-										</div>
-										<div class="col-lg-6"></div>
-									</div>
-								</div>
-							</div>
-                    	</div>
-                    	<div class="col-lg-4">
-                    		<div class="card card_instruction">
-								<div class="card-header">Instructions</div>
-								<div class="card-body">
-									<p>Lorem Ipsum has been the industry's standard took It has survived not only five centuries.</p>
-									<p>Lorem Ipsum has been the industry's standard took It has survived not only five centuries.</p>
-									<p>Lorem Ipsum has been the industry's standard took It has survived not only five centuries.</p>
-								</div>
-							</div>
-                    	</div>
+                        <div class="col-lg-8">
+                            <div class="card card_Suggestions">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <h4>Suggestions</h4>
+                                            <br>
+                                            <form class="forms">
+                                                <div class="form-group">
+                                                    <label>Leave your suggestions here</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your suggestions"></textarea>
+                                                </div>                                        <button class="btn btn-default auth_btn">SUBMIT</button>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
                     </div>
                 </div>
             </div> 

@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 #wrapper {
   padding-left: 0;
   transition: all 0.5s ease;
@@ -264,6 +268,9 @@ body {
   font-weight: bold;
   padding: 0.5rem 1rem;
 }
+.btn_opacity:hover {
+  color: #D8EEFB;
+}
 
 .btn_sidebar {
   color: #0C57C9;
@@ -315,6 +322,9 @@ body {
   font-weight: bold;
   margin-top: 2rem;
 }
+.auth_btn:hover {
+  color: #D8EEFB;
+}
 
 .body_btn {
   color: #0C57C9;
@@ -327,7 +337,28 @@ body {
   padding: 0.5rem 1rem;
   font-weight: bold;
   font-size: 1.3rem;
+  transition: 0.5s;
   color: #fff;
+}
+.outline_btn-light:hover {
+  background-color: #fff;
+  transition: 0.5s;
+  color: #0C57C9;
+}
+
+.outline_btn-dash {
+  margin-top: 4rem;
+  border: solid 1.5px #fff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: 0.5s;
+  color: #fff;
+}
+.outline_btn-dash:hover {
+  background-color: #fff;
+  transition: 0.5s;
+  color: #000;
 }
 
 .outline_btn {
@@ -335,7 +366,13 @@ body {
   padding: 0.5rem 1rem;
   font-size: 1.3rem;
   font-weight: bold;
+  transition: 0.5s;
   color: #0C57C9;
+}
+.outline_btn:hover {
+  color: #fff;
+  background-color: #0C57C9;
+  transition: 0.5s;
 }
 
 .outline_btn-body {
@@ -358,17 +395,42 @@ body {
   margin-bottom: 2rem;
   border: 1px solid #D8EEFB;
 }
+.forms .form-group select {
+  height: 4rem;
+  font-size: 1.3rem;
+  border: 1px solid #D8EEFB;
+}
 .forms .form-group .input_text {
   font-size: 1rem;
   color: #0C57C9;
 }
-.forms .uploads {
-  font-size: 1.3rem;
-  padding-top: 2rem !important;
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+.forms .form-group textarea {
   border: 1px solid #D8EEFB;
+  font-size: 1.3rem;
+}
+.forms .input-group {
+  margin-bottom: 1rem;
+}
+.forms .input-group .uploads {
+  font-size: 1.3rem;
+  border: 1px solid #D8EEFB;
+}
+.forms .input-group .upload_input {
+  font-size: 1.3rem;
+  border: 1px solid #D8EEFB;
+  padding-top: 0.7rem;
+  padding-bottom: 1rem;
+  height: 3.6rem;
+}
+.forms .input-group .upload_input::after {
+  padding-top: 0.7rem;
+  padding-bottom: 1rem;
+  height: 3.6rem;
+}
+.forms .input-group .upload_btn {
+  padding-top: 0.7rem;
+  padding-bottom: 0.9rem;
+  font-size: 1.3rem;
 }
 
 .forms_auth .form-group .form-control {
@@ -377,6 +439,18 @@ body {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   border: 1px solid #D8EEFB;
+}
+
+.sellbitcoin_form input {
+  font-size: 1.3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #D8EEFB;
+}
+
+.form_note {
+  width: 80%;
 }
 
 .card {
@@ -389,6 +463,7 @@ body {
 }
 .dashboard .dashboard_heading {
   margin-bottom: 2rem;
+  color: #0C57C9;
 }
 .dashboard .activities {
   margin-bottom: 2rem;
@@ -455,6 +530,16 @@ body {
   font-weight: bold;
   margin-top: 0.5rem;
 }
+.dashboard .p_bitcoin {
+  background-image: url("../assets/bitcoin-card.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.dashboard .p_giftcard {
+  background-image: url("../assets/giftcards-card.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
 .dashboard .card_transaction .card-header {
   background-color: #fff;
   font-size: 1.6rem;
@@ -472,6 +557,7 @@ body {
 }
 .transaction .transaction_heading {
   margin-bottom: 2rem;
+  color: #0C57C9;
 }
 .transaction .card_balance {
   background-color: #0C57C9;
@@ -503,6 +589,7 @@ body {
 }
 .airtime .airtime_heading {
   margin-bottom: 2rem;
+  color: #0C57C9;
 }
 .airtime .card_form {
   margin-bottom: 2rem;
@@ -543,6 +630,7 @@ body {
 }
 .giftcard .giftcard_heading {
   margin-bottom: 2rem;
+  color: #0C57C9;
 }
 .giftcard .card_form {
   margin-bottom: 2rem;
@@ -588,6 +676,7 @@ body {
 
 .bitcoin .bitcoin_heading {
   margin-bottom: 2rem;
+  color: #0C57C9;
 }
 .bitcoin .bitcoin_balance {
   background-color: #0C57C9;
@@ -672,6 +761,7 @@ body {
 
 .sendcoin .sendcoin_heading {
   margin-bottom: 2rem;
+  color: #0C57C9;
 }
 .sendcoin .card_sendicon {
   padding: 2rem;
@@ -711,11 +801,12 @@ body {
 .sellcoin {
   font-size: 1.3rem;
 }
+.sellcoin .sellcoin_heading {
+  margin-bottom: 2rem;
+  color: #0C57C9;
+}
 .sellcoin .card_sellbitcion {
   padding: 2rem;
-}
-.sellcoin .card_sellbitcion .sellcoin_heading {
-  margin-bottom: 2rem;
 }
 .sellcoin .card_sellbitcion .sell_bitcoin .sellbitcoin_form input {
   font-size: 1.3rem;
@@ -740,8 +831,48 @@ body {
   border: solid 1px #0C57C9;
 }
 
+.withdrawal {
+  font-size: 1.3rem;
+}
+.withdrawal .withdrawal_heading {
+  margin-bottom: 2rem;
+  color: #0C57C9;
+}
+.withdrawal .card_withdrawal {
+  padding: 2rem;
+}
+.withdrawal .card_wallet {
+  background-color: #0C57C9;
+}
+.withdrawal .card_wallet .card-figure {
+  font-size: 3rem;
+}
+
+.Suggestions {
+  font-size: 1.3rem;
+}
+.Suggestions .Suggestions_heading {
+  margin-bottom: 2rem;
+  color: #0C57C9;
+}
+.Suggestions .card_Suggestions {
+  padding: 2rem;
+}
+
+.edit_profile {
+  font-size: 1.3rem;
+}
+.edit_profile .edit_profile-heading {
+  margin-bottom: 2rem;
+  color: #0C57C9;
+}
+.edit_profile .card_profile {
+  padding: 2rem;
+}
+
 .settings .settings_heading {
   margin-bottom: 2rem;
+  color: #0C57C9;
 }
 .settings .card_profile {
   background-color: #0C57C9;
