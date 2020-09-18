@@ -22,222 +22,265 @@
 
   	<body>
 
-	  	<!--Header-->
-	  	<header id="home">
+  		<button id="menu_btn" class="btn btn-default d-block d-sm-block d-md-none">
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<div class="sidenav_close d-block d-sm-block d-md-none">
+			<div class="sidenav_header">
+				<img src="../assets/Polixe-logo-dark.png">
+			</div>
+			<div class="link_content">
+				<ul class="list-unstyled">
+					<li class="nav-item active"><a href="#home" class="nav-link page-scroll">Home</a></li>
+					<li class="nav-item"><a href="#about" class="nav-link page-scroll">About</a></li>
+					<li class="nav-item"><a href="#giftcard" class="nav-link page-scroll">Services</a></li>
+					<li class="nav-item"><a href="Login.html" class="nav-link">Login</a></li>
+					<li class="nav-item"><a href="Register.html" class="nav-link">Signup</a></li>
+				</ul>
+			</div>
+			<div class="contact_sidebar">
+				<a href="Register.html" class="btn btn-default btn_sidebar">GIVE SUGGESTION <ion-icon name="add"></ion-icon></a>
+				<h6 class="topic">CONTACT</h6>
+				<span class="email">support@polixe.com</span>
+				<div class="sidenav_icon">
+					<ion-icon name="logo-instagram"></ion-icon>
+					<ion-icon name="logo-twitter"></ion-icon>
+					<ion-icon name="logo-facebook"></ion-icon>
+					<ion-icon name="logo-linkedin"></ion-icon>
+				</div>
+            </div>
+		</div>
 
-		  	<!--Navigation-->
-		  	<nav class="navbar navbar-expand-lg navbar-dark container-fluid web_nav navbox fixed-top">
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-			    <a class="navbar-brand" href="#">
-			    	<img src="../assets/Polixe-logo-light.png">
-			    </a>
-			    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-			      <li class="nav-item active">
-			        <a data-scroll class="nav-link page-scroll" href="#home">Home <span class="sr-only">(current)</span></a>
-			      </li>
-			      <li class="nav-item">
-			        <a data-scroll class="nav-link page-scroll" href="#about">About</a>
-			      </li>
-			      <li class="nav-item">
-			        <a data-scroll class="nav-link page-scroll" href="#giftcard">Services</a>
-			      </li>
-			      <li class="nav-item">
-			        <a data-scroll class="nav-link btn btn-default nav_btn" href="Login.html">Login</a>
-			      </li>
-			    </ul>
-			  </div>
-			</nav>
+	  	<div class=page_content>
+		  	<!--Header-->
+		  	<header id="home">
 
-			<!--Header content-->
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 header_topic text-white">
-						<h1 class="header_title">
-							See the rates. Call the Polixe. Experience the speed.
-						</h1>
-						<p class="header_subtitle lead">
-							We offer the best rates on gift cards, bitcoin and airtime to cash. Enjoy security at its best and speed at its pace
-						</p>
-						<a href="Register.html" class="btn btn-default solid_btn-body">Get Started <ion-icon name="arrow-forward-outline"></ion-icon></a>
-					</div>
-					<div class="col-lg-6 header_canvas text-right">
+			  	<!--Navigation-->
+			  	<nav class="navbar navbar-expand-lg navbar-dark container-fluid web_nav navbox fixed-top d-none d-sm-none d-md-block">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				    <a class="navbar-brand" href="#">
+				    	<img src="../assets/Polixe-logo-light.png">
+				    </a>
+				    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+				      <li class="nav-item active">
+				        <a data-scroll class="nav-link page-scroll" href="#home">Home <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a data-scroll class="nav-link page-scroll" href="#about">About</a>
+				      </li>
+				      <li class="nav-item">
+				        <a data-scroll class="nav-link page-scroll" href="#giftcard">Services</a>
+				      </li>
+				      <li class="nav-item">
+				        <a data-scroll class="nav-link btn btn-default nav_btn" href="Login.html">Login</a>
+				      </li>
+				    </ul>
+				  </div>
+				</nav>
+
+				<div class="nav_mobile web_nav text-center p-4 d-block d-sm-block d-md-none">
+					<a class="navbar-brand" href="#">
+				    	<img src="../assets/Polixe-logo-light.png">
+				    </a>
+				</div>
+
+				<!--Header content-->
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 header_topic text-white">
+							<h1 class="header_title">
+								See the rates. Call the Polixe. Experience the speed.
+							</h1>
+							<p class="header_subtitle lead">
+								We offer the best rates on gift cards, bitcoin and airtime to cash. Enjoy security at its best and speed at its pace
+							</p>
+							<a href="Register.html" class="btn btn-default header_btn solid_btn-body">Get Started <ion-icon name="arrow-forward-outline"></ion-icon></a>
+						</div>
+						<div class="col-lg-6 header_canvas text-right">
+						</div>
 					</div>
 				</div>
-			</div>
 
-		</header>
+			</header>
 
-		<!--Introduction section-->
-		<section id="intro">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="intro_line"></div>
-						<h3 class="intro_text">
-							We deliver in five (5) minutes.  See our juicy rates and enjoy our services tailored for the best.
-						</h3>
-					</div>
-					<div class="col-lg-6"></div>
-					<div class="col-lg-3"></div>
-					<div class="col-lg-2 text-center">
-						<img src="../assets/giftcard-icon.png" class="intro_icon">
-						<p class="intro_icon-text">
-							Redeem Gift cards
-						</p>
-					</div>
-					<div class="col-lg-2 text-center">
-						<img src="../assets/airtime-icon.png" class="intro_icon">
-						<p class="intro_icon-text">
-							Convert Airtime to Cash
-						</p>
-					</div>
-					<div class="col-lg-2 text-center">
-						<img src="../assets/bitcoin-icon.png" class="intro_icon">
-						<p class="intro_icon-text">
-							Trade Bitcoins
-						</p>
-					</div>
-					<div class="col-lg-3"></div>
-				</div>
-			</div>
-		</section>
-
-		<!--About section-->
-		<section id="about">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<img src="../assets/img1.png" class="about_img">
-					</div>
-					<div class="col-lg-6">
-						<h3 class="about_title">
-							Dare to standout.
-						</h3>
-						<p class="about_text">
-							We are a company out to make easy the conversion of airtime, bitcoin, and gift cards to cash. We strongly believe in customer’s satisfaction by providing quality and swift services to all and sundry.
-						</p>
-						<p class="about_text">
-							What drives us is the fact that we can continue to innovatively make these conversions seamless with top notch technologies. Welcome to Polixe
-						</p>
-						<a href="Register.html" class="btn btn-default outline_btn-body">Get Started</a>
+			<!--Introduction section-->
+			<section id="intro">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="intro_line"></div>
+							<h3 class="intro_text">
+								We deliver in five (5) minutes.  See our juicy rates and enjoy our services tailored for the best.
+							</h3>
+						</div>
+						<div class="col-lg-6"></div>
+						<div class="col-lg-3"></div>
+						<div class="col-lg-2 text-center">
+							<img src="../assets/giftcard-icon.png" class="intro_icon">
+							<p class="intro_icon-text">
+								Redeem Gift cards
+							</p>
+						</div>
+						<div class="col-lg-2 text-center">
+							<img src="../assets/airtime-icon.png" class="intro_icon">
+							<p class="intro_icon-text">
+								Convert Airtime to Cash
+							</p>
+						</div>
+						<div class="col-lg-2 text-center">
+							<img src="../assets/bitcoin-icon.png" class="intro_icon">
+							<p class="intro_icon-text">
+								Trade Bitcoins
+							</p>
+						</div>
+						<div class="col-lg-3"></div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!--Gift card section-->
-		<section id="giftcard">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<h3 class="giftcard_title">
-							A gift to you - Redeem gift cards
-						</h3>
-						<p class="giftcard_text">
-							We buy and sell almost every form of gift cards like Amazon Gift cards, Google Play gift cards, iTunes gift cards, Walmart gift cards among others, and in any denomination.
-						</p>
-						<p class="giftcard_text">
-							You can be sure to get the best price rates with us and as well get credited in minutes for every gift card you sell to us.
-						</p>
-						<a href="Register.html" class="btn btn-default outline_btn-body">Get Started</a>
-					</div>
-					<div class="col-lg-6 text-right">
-						<img src="../assets/img2.png" class="giftcard_img">
+			<!--About section-->
+			<section id="about">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<img src="../assets/img1.png" class="about_img">
+						</div>
+						<div class="col-lg-6">
+							<h3 class="about_title">
+								Dare to standout.
+							</h3>
+							<p class="about_text">
+								We are a company out to make easy the conversion of airtime, bitcoin, and gift cards to cash. We strongly believe in customer’s satisfaction by providing quality and swift services to all and sundry.
+							</p>
+							<p class="about_text">
+								What drives us is the fact that we can continue to innovatively make these conversions seamless with top notch technologies. Welcome to Polixe
+							</p>
+							<a href="Register.html" class="btn btn-default outline_btn-body">Get Started</a>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!--Convert Airtime-->
-		<section id="airtime">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<img src="../assets/img3.png" class="airtime_img">
-					</div>
-					<div class="col-lg-6">
-						<h3 class="airtime_title">
-							Do the Magic - Convert Airtime to Cash
-						</h3>
-						<p class="airtime_text">
-							With the best rate available and light-speed service, converting your airtime on all networks to cash has just been made easy with the Polixe.
-						</p>
-						<p class="airtime_text">
-							We convert any amount to cash from MTN, Airtel, Globacom and 9mobile.
-						</p>
-						<a href="Register.html" class="btn btn-default outline_btn-body">Get Started</a>
+			<!--Gift card section-->
+			<section id="giftcard">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 d-block d-sm-block d-md-none">
+							<img src="../assets/img2.png" class="giftcard_img">
+						</div>
+						<div class="col-lg-6">
+							<h3 class="giftcard_title">
+								A gift to you - Redeem gift cards
+							</h3>
+							<p class="giftcard_text">
+								We buy and sell almost every form of gift cards like Amazon Gift cards, Google Play gift cards, iTunes gift cards, Walmart gift cards among others, and in any denomination.
+							</p>
+							<p class="giftcard_text">
+								You can be sure to get the best price rates with us and as well get credited in minutes for every gift card you sell to us.
+							</p>
+							<a href="Register.html" class="btn btn-default outline_btn-body">Get Started</a>
+						</div>
+						<div class="col-lg-6 text-right d-none d-sm-none d-md-block">
+							<img src="../assets/img2.png" class="giftcard_img">
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!--Bitcoin section-->
-		<section id="bitcoin">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 bitcoin_textarea">
-						<h3 class="bitcoin_title">
-							Secure the trust - Trade Bitcoins
-						</h3>
-						<p class="bitcoin_text">
-							Trade your bitcoins with us. Enjoy swift conversion from bitcoin to cash and cash to bitcoin almost instantly. 
-						</p>
-						<p class="bitcoin_text">
-							We are just a click away from you.
-						</p>
-						<a href="Register.html" class="btn btn-default outline_btn-body">Get Started</a>
-					</div>
-					<div class="col-lg-6 text-right">
-						<img src="../assets/img4.png" class="bitcoin_img">
+			<!--Convert Airtime-->
+			<section id="airtime">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<img src="../assets/img3.png" class="airtime_img">
+						</div>
+						<div class="col-lg-6">
+							<h3 class="airtime_title">
+								Do the Magic - Convert Airtime to Cash
+							</h3>
+							<p class="airtime_text">
+								With the best rate available and light-speed service, converting your airtime on all networks to cash has just been made easy with the Polixe.
+							</p>
+							<p class="airtime_text">
+								We convert any amount to cash from MTN, Airtel, Globacom and 9mobile.
+							</p>
+							<a href="Register.html" class="btn btn-default outline_btn-body">Get Started</a>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!--conclusion section-->
-		<section id="conclude">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-2"></div>
-					<div class="col-lg-8 text-center">
-						<h3 class="conclude_title">
-							Ready to experience light speed tranaction at the best rate in Nigeria?
-						</h3>
-						<p class="conclude_subtitle">
-							Get started with us today click the button below to being. Check our rates - Initiate the contact - Seal the deal and Experience satisfaction.
-						</p>
-						<a href="Register.html" class="btn btn-default solid_btn-body">Get Started <ion-icon name="arrow-forward-outline"></ion-icon></a>
-					</div>
-					<div class="col-lg-2"></div>
-				</div>
-			</div>
-		</section>
-
-		<!--Footer-->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<ul class="list-unstyled">
-							<li class="copyrite">Copyright 2020 Polixe.</li>
-							<li class="linked"><a href="Terms.html" target="_blank">Terms and Conditions</a></li>
-							<!--<li class="linked">Privacy Policy</li>-->
-						</ul>
-						<span class="footer_text">Get in touch with us today, we are here for you.</span>
-						<p class="footer_number"><ion-icon name="call"></ion-icon> 09078876555</p>
-					</div>
-					<div class="col-lg-6 footer_icon text-right">
-						<ion-icon name="logo-instagram"></ion-icon>
-						<ion-icon name="logo-twitter"></ion-icon>
-						<ion-icon name="logo-facebook"></ion-icon>
-						<ion-icon name="logo-linkedin"></ion-icon>
+			<!--Bitcoin section-->
+			<section id="bitcoin">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 d-block d-sm-block d-md-none">
+							<img src="../assets/img4.png" class="bitcoin_img">
+						</div>
+						<div class="col-lg-6 bitcoin_textarea">
+							<h3 class="bitcoin_title">
+								Secure the trust - Trade Bitcoins
+							</h3>
+							<p class="bitcoin_text">
+								Trade your bitcoins with us. Enjoy swift conversion from bitcoin to cash and cash to bitcoin almost instantly. 
+							</p>
+							<p class="bitcoin_text">
+								We are just a click away from you.
+							</p>
+							<a href="Register.html" class="btn btn-default outline_btn-body">Get Started</a>
+						</div>
+						<div class="col-lg-6 text-right d-none d-sm-none d-md-block">
+							<img src="../assets/img4.png" class="bitcoin_img">
+						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+			</section>
+
+			<!--conclusion section-->
+			<section id="conclude">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-8 text-center">
+							<h3 class="conclude_title">
+								Ready to experience light speed tranaction at the best rate in Nigeria?
+							</h3>
+							<p class="conclude_subtitle">
+								Get started with us today click the button below to being. Check our rates - Initiate the contact - Seal the deal and Experience satisfaction.
+							</p>
+							<a href="Register.html" class="btn btn-default solid_btn-body">Get Started <ion-icon name="arrow-forward-outline"></ion-icon></a>
+						</div>
+						<div class="col-lg-2"></div>
+					</div>
+				</div>
+			</section>
+
+			<!--Footer-->
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<ul class="list-unstyled">
+								<li class="copyrite">Copyright 2020 Polixe.</li>
+								<li class="linked"><a href="Terms.html" target="_blank">Terms and Conditions</a></li>
+								<!--<li class="linked">Privacy Policy</li>-->
+							</ul>
+							<span class="footer_text">Get in touch with us today, we are here for you.</span>
+							<p class="footer_number"><ion-icon name="call"></ion-icon> 09078876555</p>
+						</div>
+						<div class="col-lg-6 footer_icon text-right">
+							<ion-icon name="logo-instagram"></ion-icon>
+							<ion-icon name="logo-twitter"></ion-icon>
+							<ion-icon name="logo-facebook"></ion-icon>
+							<ion-icon name="logo-linkedin"></ion-icon>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 
   
   	
@@ -272,6 +315,12 @@
 				      $('.navbar .navbar-brand img').attr('src','../assets/Polixe-logo-light.png');
 				    }
 				});
+			});
+
+			$(document).ready(function(){
+			  $("#menu_btn").click(function(){
+			    $(".sidenav_close").toggleClass("sidenav");
+			  });
 			});
 
 			//=======

@@ -173,7 +173,7 @@ a {
   margin-top: 20vh;
   padding: 2rem;
 }
-.contact_sidebar button ion-icon {
+.contact_sidebar a ion-icon {
   margin-bottom: -0.3rem;
   font-size: 1.5rem;
 }
@@ -255,6 +255,89 @@ a {
   background-color: #fff !important;
   box-shadow: 0px 1px 10px #999;
   transition: 0.5s;
+}
+
+#menu_btn {
+  background-color: #0C57C9;
+  font-size: 3rem;
+  padding: 0.3rem 1rem;
+  border-radius: 4rem;
+  position: fixed;
+  top: 1.5rem;
+  right: 1rem;
+  z-index: 1;
+}
+#menu_btn ion-icon {
+  margin-bottom: -0.3rem;
+  color: #fff;
+}
+
+.sidenav_close {
+  width: 60%;
+  height: 100vh;
+  background-color: #D8EEFB;
+  position: fixed;
+  top: 0;
+  left: -25rem;
+  z-index: 2;
+  transition: 1s all;
+}
+.sidenav_close .sidenav_header {
+  margin-top: 4rem;
+}
+.sidenav_close .sidenav_header img {
+  width: 15rem;
+  margin-left: 1rem;
+}
+.sidenav_close .link_content {
+  margin-top: 5rem;
+}
+.sidenav_close .link_content .nav-item {
+  padding: 1rem 1rem;
+}
+.sidenav_close .link_content .nav-item .nav-link {
+  color: #0C57C9;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.sidenav_close .sidenav_icon {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #0C57C9;
+}
+
+.sidenav {
+  width: 60%;
+  height: 100vh;
+  background-color: #D8EEFB;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: 1s all;
+}
+.sidenav .sidenav_header {
+  margin-top: 4rem;
+}
+.sidenav .sidenav_header img {
+  width: 15rem;
+  margin-left: 1rem;
+}
+.sidenav .link_content {
+  margin-top: 5rem;
+}
+.sidenav .link_content .nav-item {
+  padding: 1rem 1rem;
+}
+.sidenav .link_content .nav-item .nav-link {
+  color: #0C57C9;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.sidenav .sidenav_icon {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #0C57C9;
 }
 
 .btn {
@@ -392,7 +475,7 @@ a {
   font-size: 1.3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border: 1px solid #D8EEFB;
 }
 .forms .form-group select {
@@ -534,11 +617,13 @@ a {
   background-image: url("../assets/bitcoin-card.png");
   background-position: left;
   background-repeat: no-repeat;
+  background-color: #FDA600;
 }
 .dashboard .p_giftcard {
   background-image: url("../assets/giftcards-card.png");
   background-position: left;
   background-repeat: no-repeat;
+  background-color: #000;
 }
 .dashboard .card_transaction .card-header {
   background-color: #fff;
@@ -732,6 +817,34 @@ a {
   color: #0C57C9;
 }
 
+.bitwallet .bitwallet_heading {
+  margin-bottom: 2rem;
+  color: #0C57C9;
+}
+.bitwallet .bitwallet_card {
+  padding: 2rem;
+}
+.bitwallet .bitwallet_card .card-header {
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border-bottom: 0;
+}
+.bitwallet .bitwallet_card .modal_caption {
+  font-size: 1.3rem;
+}
+.bitwallet .bitwallet_card .modal_barcode {
+  width: 30rem;
+}
+.bitwallet .bitwallet_card .form-label {
+  color: #0C57C9;
+}
+.bitwallet .bitwallet_card .form-control-plaintext {
+  font-size: 1.3rem;
+  padding: 1rem;
+  border: solid 1px #0C57C9;
+}
+
 .modal .modal-content {
   padding: 2rem;
 }
@@ -743,17 +856,6 @@ a {
 }
 .modal .modal-content .modal_caption {
   font-size: 1.3rem;
-}
-.modal .modal-content .modal_barcode {
-  width: 30rem;
-}
-.modal .modal-content .form-label {
-  color: #0C57C9;
-}
-.modal .modal-content .form-control-plaintext {
-  font-size: 1.3rem;
-  padding: 1rem;
-  border: solid 1px #0C57C9;
 }
 .modal .modal-content .modal-footer {
   border: 0;
@@ -935,6 +1037,20 @@ a {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+  .form_container .form_title {
+    font-size: 2rem;
+    margin-top: 5vh;
+    color: #0C57C9;
+  }
+  .form_container .form_subtitle {
+    font-size: 1.3rem;
+  }
+
+  .auth_footer {
+    margin-top: 20vh;
+  }
+}
 header {
   height: 100vh;
   background-image: url(../assets/bg2.jpg);
@@ -962,6 +1078,19 @@ header .header_canvas .header_img {
   width: 80%;
 }
 
+@media (max-width: 768px) {
+  header {
+    height: 100vh;
+    background-image: url(../assets/bg2.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .header_topic {
+    text-align: center;
+  }
+}
 #intro {
   padding: 10vh 0;
 }
