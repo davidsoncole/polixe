@@ -33,9 +33,9 @@
                     </li>
                     <li> <a href="Dashboard.html"><ion-icon name="grid"></ion-icon> Dashboard</a> </li>
                     <li> <a href="Transaction.html"><ion-icon name="cash"></ion-icon> Transaction</a> </li>
-                    <li class="active"> <a href="Airtime.html"><ion-icon name="sync-circle"></ion-icon> Convert Airtime</a> </li>
+                    <li> <a href="Airtime.html"><ion-icon name="sync-circle"></ion-icon> Convert Airtime</a> </li>
                     <li> <a href="Giftcard.html"><ion-icon name="journal"></ion-icon> Gift Cards</a> </li>
-                    <li> <a href="Bitcoin.html"><ion-icon name="sync-circle"></ion-icon> Bitcoin</a> </li>
+                    <li  class="active"> <a href="Bitcoin.html"><ion-icon name="sync-circle"></ion-icon> Bitcoin</a> </li>
                     <li> <a href="Settings.html"><ion-icon name="settings"></ion-icon> Settings</a> </li>
                     <li> <a href="#"><ion-icon name="log-out"></ion-icon> Logout</a> </li>
                     <div class="contact_sidebar">
@@ -55,7 +55,7 @@
             		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
             			<ion-icon name="menu"></ion-icon>
             		</button>
-                    <div class="profile_navbar ml-auto d-none d-sm-none d-md-block">
+            		<div class="profile_navbar ml-auto d-none d-sm-none d-md-block">
                         <span class="user_name">unogu davidson</span>
                         <img class="user_img" src="../assets/profile.png">
                     </div>
@@ -68,60 +68,52 @@
             	<div id="overlay"></div>
 
             	<!--page-content-wrapper -->
-                <div class="container-fluid airtime">
-                	<h3 class="airtime_heading">
-		              	Convert Airtime
-		            </h3>
-
+                <div class="container-fluid bitwallet">
+                	<h3 class="bitwallet_heading">
+						Send Airtime
+					</h3>
+                	<nav class="nav_bread" aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="Airtime.html">Back</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Send Airtime</li>
+						</ol>
+					</nav>
+                    
                     <div class="row">
-                    	<div class="col-lg-8">
-                    		<div class="card card_form">
-								<div class="card-header">Convert airtime to cash</div>
-								<div class="card-body">
-									<div class="row">
-										<div class="col-lg-6">
-											<form class="forms">
-												<div class="form-group">
-												    <select class="form-control selectWrapper" id="exampleFormControlSelect1">
-												      <option disabled selected>Select Networks</option>
-												      <option>MTN Nigeria</option>
-												      <option>9Mobile</option>
-												      <option>Airtel</option>
-												      <option>GLO Nigeria</option>
-												    </select>
-												</div>
-												<div class="form-group">
-												    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Sender’s Phone Number">
-												</div>
-												<div class="form-group">
-												    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Amount">
-												</div>
-												<div class="form-group">
-												    <input class="form-control" type="text" placeholder="Network Charge" readonly>
-												</div>
-                                                <div class="notice">
-                                                    <span class="notice_subtopic">&#8358; 0.00</span>
-                                                    <p class="notice_topic">You will get</p>
-                                                </div>
-												<br>
-												<a href="Sendairtime.html" class="btn btn-default auth_btn">CONVERT</a>
-											</form>
-										</div>
-										<div class="col-lg-6"></div>
-									</div>
-								</div>
-							</div>
-                    	</div>
-                    	<div class="col-lg-4">
-                    		<div class="card card_instruction">
-								<div class="card-header">Instructions</div>
-								<div class="card-body">
-									<p>Lorem Ipsum has been the industry's standard took It has survived not only five centuries.</p>
-									<p>Lorem Ipsum has been the industry's standard took It has survived not only five centuries.</p>
-									<p>Lorem Ipsum has been the industry's standard took It has survived not only five centuries.</p>
-								</div>
-							</div>
-                    	</div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card bitwallet_card">
+                                        <div class="card-header">Hello Chife!</div>
+                                        <div class="card-body">
+                                            <p class="modal_caption">Transfer N5000 worth of airtime to this phone number below</p>
+                                            <div class="box_one">
+                                                <h3 class="text-success">0800000000</h3>
+                                                <p class="note">please never save the above number</p>
+                                                <p class="note text-uppercase">we don't accept vtu or recharge pin</p>
+                                            </div>
+                                            <div class="box_two">
+                                                <p class="note_bold text-uppercase">Please use the display phone number only once because a new number will be provided for every transaction so as to avoid loss of airtme</p>
+                                            </div>
+                                            <h5 class="subhead">How to transfer MTN Airtime</h5>
+                                            <div class="box_three">
+                                                <span class="text-success caption">Using USSD</span>
+                                                <p class="note"><span class="gray_note">Dail: </span> *600*0800000000*5000*transfer PIN#</p>
+                                            </div>
+                                            <div class="box_four">
+                                                <span class="text-success">How to your transfer PIN</span>
+                                                <p class="note">Your default PIN is 0000. You are advised to change your default pin to the desired one.</p>
+                                                <span class="text-success">To change your transfer PIN</span>
+                                                <p class="note"><span>Dail: </span> *600*0800000000*5000*transfer PIN#</p>
+                                            </div>
+                                            <button class="btn btn-default auth_btn">COMPLETED</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div> 
@@ -138,8 +130,8 @@
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <!-- ionicons -->
-        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+	    <!-- ionicons -->
+    	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
 	    <script>
           $(function(){

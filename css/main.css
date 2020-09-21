@@ -367,6 +367,8 @@ a {
 .sidenav .sidenav_icon {
   margin-top: 0.5rem;
   font-size: 1.2rem;
+}
+.sidenav .sidenav_icon a {
   color: #0C57C9;
 }
 
@@ -560,6 +562,11 @@ a {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   border: 1px solid #D8EEFB;
+}
+@media (max-width: 768px) {
+  .sellbitcoin_form .input-group {
+    margin-bottom: 2rem;
+  }
 }
 
 .form_note {
@@ -972,6 +979,7 @@ a {
 }
 .withdrawal .card_withdrawal {
   padding: 2rem;
+  margin-bottom: 2rem;
 }
 .withdrawal .card_wallet {
   background-color: #0C57C9;
@@ -1026,6 +1034,26 @@ a {
   font-weight: bold;
   font-size: 1.6rem;
   border-bottom: 0;
+}
+
+.bitwallet_card .box_two {
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.bitwallet_card .note_bold {
+  font-weight: bold;
+  color: red;
+}
+.bitwallet_card .note {
+  font-size: 1.2rem;
+}
+.bitwallet_card .box_one, .bitwallet_card .box_three, .bitwallet_card .box_four {
+  background-color: rgba(216, 238, 251, 0.8);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
 }
 
 .form_container {
