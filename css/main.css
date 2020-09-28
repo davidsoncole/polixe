@@ -1143,7 +1143,7 @@ a {
   width: 50rem;
   position: absolute;
   right: -20rem;
-  bottom: -4rem;
+  bottom: -20rem;
   transform: rotate(-20deg);
   z-index: -1;
 }
