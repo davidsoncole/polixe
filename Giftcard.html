@@ -41,7 +41,7 @@
                     <div class="contact_sidebar">
                       <a href="Suggestion.html" class="btn btn-default btn_sidebar">GIVE SUGGESTION <ion-icon name="add"></ion-icon></a>
                       <h6 class="topic">CONTACT</h6>
-                      <span class="email">support@polixe.com</span>
+                      <a href="mailto:support@polixe.com" class="email">support@polixe.com</a>
                     </div>
                 </ul>
                 
@@ -96,28 +96,20 @@
 												      <option>USA</option>
 												      <option>UK</option>
 												      <option>Germany</option>
-												      <option>Canda</option>
+												      <option>Canada</option>
 												    </select>
 												</div>
-												<label class="upload_label">Upload Card Front</label>
-												<div class="input-group">
-													<div class="custom-file">
-												    	<input type="file" class="custom-file-input upload" id="inputGroupFile04">
-												    <label class="custom-file-label upload_input" for="inputGroupFile04">Choose file</label>
-												  </div>
-												  <div class="input-group-append">
-												    <button class="btn btn-outline-primary upload_btn" type="button">Upload</button>
-												  </div>
-												</div>
-												<label class="upload_label">Upload Card Back</label>
-												<div class="input-group">
-													<div class="custom-file">
-												    	<input type="file" class="custom-file-input upload" id="inputGroupFile04">
-												    <label class="custom-file-label upload_input" for="inputGroupFile04">Choose file</label>
-												  </div>
-												  <div class="input-group-append">
-												    <button class="btn btn-outline-primary upload_btn" type="button">Upload</button>
-												  </div>
+												<div id="uploads">
+													<div>
+														<label for="upload">
+															<input type="file" id="upload" multiple>
+														Upload Files
+														</label>
+													</div>
+													<div class="files">
+														<p>Selected Files</p>
+														<ul></ul>
+													</div>
 												</div>
 												<div class="form-group">
 												    <select class="form-control" id="exampleFormControlSelect1">
@@ -141,7 +133,9 @@
 												<button class="btn btn-default auth_btn">PROCEED</button>
 											</form>
 										</div>
-										<div class="col-lg-6"></div>
+										<div class="col-lg-6">
+											<img class="airtime_img" src="../assets/gift_card.svg">
+										</div>
 									</div>
 								</div>
 							</div>
@@ -190,6 +184,61 @@
               }
             });
           });
+
+
+          	// no react or anything
+			let state = {};
+
+			// state management
+			function updateState(newState) {
+				state = { ...state, ...newState };
+				console.log(state);
+			}
+
+			// event handlers
+			$("input").change(function(e) {
+				let files = document.getElementsByTagName("input")[0].files;
+				let filesArr = Array.from(files);
+				updateState({ files: files, filesArr: filesArr });
+
+				renderFileList();
+			});
+
+			$(".files").on("click", "li > i", function(e) {
+				let key = $(this)
+					.parent()
+					.attr("key");
+				let curArr = state.filesArr;
+				curArr.splice(key, 1);
+				updateState({ filesArr: curArr });
+				renderFileList();
+			});
+
+			$("form").on("submit", function(e) {
+				e.preventDefault();
+				console.log(state);
+				renderFileList();
+			});
+
+			// render functions
+			function renderFileList() {
+				let fileMap = state.filesArr.map((file, index) => {
+					let suffix = "bytes";
+					let size = file.size;
+					if (size >= 1024 && size < 1024000) {
+						suffix = "KB";
+						size = Math.round(size / 1024 * 100) / 100;
+					} else if (size >= 1024000) {
+						suffix = "MB";
+						size = Math.round(size / 1024000 * 100) / 100;
+					}
+
+					return `<li key="${index}">${
+						file.name
+					} <span class="file-size">${size} ${suffix}</span><i class="material-icons md-48">delete</i></li>`;
+				});
+				$("ul").html(fileMap);
+			}
            
         </script>
 

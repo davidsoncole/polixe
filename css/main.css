@@ -1056,6 +1056,89 @@ a {
   border-radius: 0.5rem;
 }
 
+#uploads * {
+  box-sizing: border-box;
+}
+#uploads input[type=file] {
+  position: absolute;
+  right: -9999px;
+  visibility: hidden;
+  opacity: 0;
+}
+#uploads input[type=submit] {
+  position: relative;
+  padding: 1rem 3rem;
+  background: #0c8fda;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 0;
+  border: 0;
+  color: #fff;
+}
+#uploads input[type=submit]:hover {
+  background: #0b7fc2;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+#uploads label {
+  position: relative;
+  padding: 1rem 3rem;
+  background: #eee;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 0;
+}
+#uploads label:hover {
+  background: #0c8fda;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+#uploads div.files {
+  background: #eee;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0;
+}
+#uploads div.files ul {
+  list-style: none;
+  padding: 0;
+  max-height: 150px;
+  overflow: auto;
+}
+#uploads div.files ul li {
+  padding: 0.5rem 0;
+  padding-right: 2rem;
+  position: relative;
+}
+#uploads div.files ul li i {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translatey(-50%);
+}
+#uploads div.container {
+  width: 100%;
+  padding: 0 2rem;
+}
+#uploads span.file-size {
+  color: #999;
+  padding-left: 0.5rem;
+}
+
+.drop_pro {
+  background-color: #0C57C9;
+  color: #fff;
+}
+
+.airtime_img {
+  width: 100%;
+}
+
 .form_container {
   padding: 0 5vw;
 }
