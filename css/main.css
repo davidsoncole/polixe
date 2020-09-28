@@ -614,7 +614,7 @@ a {
   margin: 2rem 0;
 }
 .dashboard .card_profile .profile_img {
-  width: 6rem;
+  width: 10rem;
   margin-bottom: 2rem;
 }
 .dashboard .card_profile .profile_text {
@@ -1137,6 +1137,15 @@ a {
 
 .airtime_img {
   width: 100%;
+}
+
+.tran_img {
+  width: 50rem;
+  position: absolute;
+  right: -20rem;
+  bottom: -4rem;
+  transform: rotate(-20deg);
+  z-index: -1;
 }
 
 .form_container {
