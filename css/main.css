@@ -1156,6 +1156,11 @@ a {
   width: 100%;
 }
 
+.listhere ion-icon {
+  color: #0C57C9;
+  font-size: 15px;
+}
+
 .form_container {
   padding: 0 5vw;
 }

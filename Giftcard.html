@@ -108,7 +108,7 @@
 													</div>
 													<div class="files">
 														<p>Selected Files</p>
-														<ul></ul>
+														<ul class="listhere"></ul>
 													</div>
 												</div>
 												<div class="form-group">
@@ -143,15 +143,13 @@
                     		<div class="card card_instruction">
 								<div class="card-header">HOW TO REDEEM GIFTCARD?</div>
 								<div class="card-body">
-									<ul>
-										<li>Select card</li>
-										<li>Select country</li>
-										<li>Upload a clear image of card (s) / receipt</li>
-										<li>Select card type</li>
-										<li>Enter total card value</li>
-										<li>Review the information and continue</li>
-										<li>Please sit back and relax while we credit your naira wallet</li>
-									</ul>
+									<p>Select card</p>
+									<p>Select country</p>
+									<p>Upload a clear image of card (s) / receipt</p>
+									<p>Select card type</p>
+									<p>Enter total card value</p>
+									<p>Review the information and continue</p>
+									<p>Please sit back and relax while we credit your naira wallet</p>
 								</div>
 							</div>
                     	</div>
@@ -246,9 +244,9 @@
 
 					return `<li key="${index}">${
 						file.name
-					} <span class="file-size">${size} ${suffix}</span><i class="material-icons md-48">delete</i></li>`;
+					} <span class="file-size">${size} ${suffix}</span><i><ion-icon name="trash"></ion-icon></i></li>`;
 				});
-				$("ul").html(fileMap);
+				$(".listhere").html(fileMap);
 			}
            
         </script>
