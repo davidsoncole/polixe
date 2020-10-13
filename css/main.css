@@ -1397,6 +1397,9 @@ footer ul li {
 footer ul li a {
   color: #D8EEFB;
 }
+footer ul .linked a:hover {
+  color: #fff;
+}
 footer .footer_text {
   font-size: 1.6rem;
   color: #fff;
