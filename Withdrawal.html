@@ -90,7 +90,8 @@
                                             <form class="forms">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Amount">
-                                                </div>                                        <button class="btn btn-default auth_btn">PROCEED</button>
+                                                </div>
+                                                <button class="btn btn-default auth_btn" data-button-spinner=" LOADING">PROCEED</button>
                                             </form>
                                         </div>
                                         <div class="col-lg-6"></div>
@@ -149,6 +150,15 @@
               }
             });
           });
+
+          // spinner without timeout
+        $('[data-button-spinner]').on('click', function () {
+          var $this = $(this);
+          $this.data("ohtml", $this.html());
+          var nhtml = "<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span> " + this.dataset.buttonSpinner;
+          $this.html(nhtml);
+          $this.attr("disabled", true);
+        });
            
         </script>
 

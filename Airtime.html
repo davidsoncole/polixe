@@ -104,7 +104,9 @@
                                                     <p class="notice_topic">You will get</p>
                                                 </div>
 												<br>
-												<a href="Sendairtime.html" class="btn btn-default auth_btn">CONVERT</a>
+												<button type="button" class="btn btn-default auth_btn" data-button-spinner=" LOADING">
+                                                 CONVERT
+                                                </button>
 											</form>
 										</div>
 										<div class="col-lg-6">
@@ -165,6 +167,15 @@
               }
             });
           });
+
+          // spinner without timeout
+        $('[data-button-spinner]').on('click', function () {
+          var $this = $(this);
+          $this.data("ohtml", $this.html());
+          var nhtml = "<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span> " + this.dataset.buttonSpinner;
+          $this.html(nhtml);
+          $this.attr("disabled", true);
+        });
            
         </script>
 

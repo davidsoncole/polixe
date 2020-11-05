@@ -787,6 +787,38 @@ a {
 .giftcard .card_instruction .card-body {
   font-size: 1.3rem;
 }
+.giftcard .giftcard_btn {
+  width: 100%;
+  border-radius: 1rem;
+}
+.giftcard .giftcard_image {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.giftcard .giftcard_name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.giftcard .giftcard_output {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.giftcard .giftcard_output .giftcard_list {
+  width: 70px;
+  border-radius: 0.4rem;
+}
+.giftcard .giftcard_output .giftcard_list-heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.giftcard .giftcard_output .giftcard_list-subheading {
+  font-size: 1.2rem;
+  color: gray;
+}
+.giftcard .cardgifts {
+  display: none;
+}
 
 .nav_bread {
   margin-bottom: 2rem;
@@ -1190,6 +1222,11 @@ a {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.resetpwd_img {
+  width: 60%;
+  margin-top: 25vh;
 }
 
 .signup_img {

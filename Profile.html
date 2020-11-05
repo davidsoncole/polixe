@@ -105,7 +105,7 @@
                                                         <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Phone Number">
                                                     </div>
                                                 </div>
-                                                <button class="btn btn-default auth_btn">SAVE</button>
+                                                <button class="btn btn-default auth_btn" data-button-spinner=" LOADING">SAVE</button>
                                             </form>
                                         </div>
                                     </div>
@@ -153,6 +153,15 @@
               }
             });
           });
+
+          // spinner without timeout
+        $('[data-button-spinner]').on('click', function () {
+          var $this = $(this);
+          $this.data("ohtml", $this.html());
+          var nhtml = "<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span> " + this.dataset.buttonSpinner;
+          $this.html(nhtml);
+          $this.attr("disabled", true);
+        });s
            
         </script>
 

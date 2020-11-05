@@ -79,15 +79,108 @@
 								<div class="card-header">Sell Gift cards</div>
 								<div class="card-body">
 									<div class="row">
-										<div class="col-lg-12">
-											<div class="row">
-												<div class="col-lg-4">
-													<button class="btn btn-default giftcard_btn">
-														<img class="giftcard_image" src="../assets/amazon.png">
-														<span class="giftcard_name">Amazon</span>
-													</button>
+										<div class="col-lg-6">
+											<form class="forms">
+												<div class="form-group">
+												    <select class="form-control" id="exampleFormControlSelect1">
+												      <option disabled selected>Select Country</option>
+												      <option>USA</option>
+												      <option>UK</option>
+												      <option>Germany</option>
+												      <option>Canada</option>
+												    </select>
 												</div>
-											</div>
+												<div id="uploads">
+													<div>
+														<label for="upload">
+															<input type="file" id="upload" multiple>
+														Upload Files
+														</label>
+													</div>
+													<div class="files">
+														<p>Selected Files</p>
+														<ul class="listhere"></ul>
+													</div>
+												</div>
+												<div class="form-group">
+												    <select class="form-control" id="cardselector">
+												    	<option disabled selected>Select Card Type</option>
+												     	<option value="physical-card">Physical Card</option>
+												     	<option value="e-code">E-code</option>
+												    </select>
+												</div>
+
+												<div id="physical-card" class="cardgifts">
+													<div class="row giftcard_output">
+													    <div class="col-7">
+													    	<div class="row">
+													    		<div class="col-6">
+													    			<img class="giftcard_list" src="../assets/amazon.png">
+													    		</div>
+													    		<div class="col-6 col-lg-6">
+													    			<span class="giftcard_list-heading">$100 Steam</span>
+													    			<br>
+													    			<span class="giftcard_list-subheading">₦27,000</span>
+													    		</div>
+													    	</div>
+													    </div>
+													    <div class="col-3  col-lg-4 giftcard">
+													    	<input type="number" class="form-control" placeholder="0">
+													    </div>
+													</div>
+												</div>
+
+												<div id="e-code" class="cardgifts">
+													<div class="row giftcard_output">
+													    <div class="col-7">
+													    	<div class="row">
+													    		<div class="col-6">
+													    			<img class="giftcard_list" src="../assets/amazon.png">
+													    		</div>
+													    		<div class="col-6 col-lg-6">
+													    			<span class="giftcard_list-heading">$200 Steam</span>
+													    			<br>
+													    			<span class="giftcard_list-subheading">₦47,000</span>
+													    		</div>
+													    	</div>
+													    </div>
+													    <div class="col-3  col-lg-4 giftcard">
+													    	<input type="number" class="form-control" placeholder="0">
+													    </div>
+													</div>
+
+													<div class="row giftcard_output">
+													    <div class="col-7">
+													    	<div class="row">
+													    		<div class="col-6">
+													    			<img class="giftcard_list" src="../assets/amazon.png">
+													    		</div>
+													    		<div class="col-6 col-lg-6">
+													    			<span class="giftcard_list-heading">$100 Steam</span>
+													    			<br>
+													    			<span class="giftcard_list-subheading">₦27,000</span>
+													    		</div>
+													    	</div>
+													    </div>
+													    <div class="col-3  col-lg-4 giftcard">
+													    	<input type="number" class="form-control" placeholder="0">
+													    </div>
+													</div>
+												</div>
+
+												<div class="form-group">
+													<label>Comment</label>
+												    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter notes E.G Enter code(s) here if you are trading ecode or if your card is not clear"></textarea>
+												</div>
+												<div class="notice">
+                                                    <span class="notice_subtopic">&#8358; 0.00</span>
+                                                    <p class="notice_topic">You will get</p>
+                                                </div>
+												<br>
+												<button class="btn btn-default auth_btn" data-button-spinner=" LOADING">PROCEED</button>
+											</form>
+										</div>
+										<div class="col-lg-6">
 										</div>
 									</div>
 								</div>
@@ -99,7 +192,7 @@
 								<div class="card-body">
 									<p>Select card</p>
 									<p>Select country</p>
-									<p>Upload a clear image of card (s) / receipt</p>
+									<p>Upload a clear images of card (s) / receipt</p>
 									<p>Select card type</p>
 									<p>Enter total card value</p>
 									<p>Review the information and continue</p>
@@ -110,7 +203,7 @@
                     	<div class="col-12 mob_card d-block d-sm-block d-md-none my-5 p-5">
                             <img class="mob_img" src="../assets/Gift_box.svg">
                         </div>
-                    </div>
+                    </div
                 </div>
             </div> 
         </div>
@@ -202,6 +295,22 @@
 				});
 				$(".listhere").html(fileMap);
 			}
+
+			$(function() {
+			  $('#cardselector').change(function(){
+			    $('.cardgifts').hide();
+			    $('#' + $(this).val()).show();
+			  });
+			});
+
+			  // spinner without timeout
+	        $('[data-button-spinner]').on('click', function () {
+	          var $this = $(this);
+	          $this.data("ohtml", $this.html());
+	          var nhtml = "<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span> " + this.dataset.buttonSpinner;
+	          $this.html(nhtml);
+	          $this.attr("disabled", true);
+	        });
            
         </script>
 
