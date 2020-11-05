@@ -816,6 +816,9 @@ a {
   font-size: 1.2rem;
   color: gray;
 }
+.giftcard .giftcard_output input {
+  margin-top: -2rem;
+}
 .giftcard .cardgifts {
   display: none;
 }
